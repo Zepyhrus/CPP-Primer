@@ -123,32 +123,32 @@ run/fast:
 	$(MAKE) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/build
 .PHONY : run/fast
 
-main.o: main.cc.o
+biplus_test.o: biplus_test.cc.o
 
-.PHONY : main.o
+.PHONY : biplus_test.o
 
 # target to build an object file
-main.cc.o:
-	$(MAKE) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/main.cc.o
-.PHONY : main.cc.o
+biplus_test.cc.o:
+	$(MAKE) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/biplus_test.cc.o
+.PHONY : biplus_test.cc.o
 
-main.i: main.cc.i
+biplus_test.i: biplus_test.cc.i
 
-.PHONY : main.i
+.PHONY : biplus_test.i
 
 # target to preprocess a source file
-main.cc.i:
-	$(MAKE) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/main.cc.i
-.PHONY : main.cc.i
+biplus_test.cc.i:
+	$(MAKE) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/biplus_test.cc.i
+.PHONY : biplus_test.cc.i
 
-main.s: main.cc.s
+biplus_test.s: biplus_test.cc.s
 
-.PHONY : main.s
+.PHONY : biplus_test.s
 
 # target to generate assembly for a file
-main.cc.s:
-	$(MAKE) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/main.cc.s
-.PHONY : main.cc.s
+biplus_test.cc.s:
+	$(MAKE) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/biplus_test.cc.s
+.PHONY : biplus_test.cc.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... run"
 	@echo "... edit_cache"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... biplus_test.o"
+	@echo "... biplus_test.i"
+	@echo "... biplus_test.s"
 .PHONY : help
 
 

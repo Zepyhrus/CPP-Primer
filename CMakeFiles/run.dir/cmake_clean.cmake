@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/run.dir/main.cc.o"
+  "CMakeFiles/run.dir/biplus_test.cc.o"
   "run.pdb"
   "run"
 )

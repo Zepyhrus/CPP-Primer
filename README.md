@@ -1,5 +1,5 @@
 # Cpp Primer
-This a implementation of some of the exercises from the book: C++ Primer.
+This a implementation of some of the exercises from the book: C++ Primer. And also some notes from the book.
 
 ## Getting Started
 
@@ -9,7 +9,13 @@ Ubuntu 18.04 LTS
 gcc/g++: 5.5
 vscode: 1.35.0, x64
 
-
+# Notes
+## 1.4 Flow of control
+### 1.4.1 The *While* statement
+```
+int b = ++a;  // a + 1 before assigned to b, cal after a + 1;
+int c = a++;  // a + 1 after assigned to c, cal before a + 1;
+```
 
 
 
