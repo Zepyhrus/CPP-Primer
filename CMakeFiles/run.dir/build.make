@@ -57,38 +57,38 @@ include CMakeFiles/run.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/run.dir/flags.make
 
-CMakeFiles/run.dir/biplus_test.cc.o: CMakeFiles/run.dir/flags.make
-CMakeFiles/run.dir/biplus_test.cc.o: biplus_test.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sherk/Workspace/cc/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/run.dir/biplus_test.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/run.dir/biplus_test.cc.o -c /home/sherk/Workspace/cc/biplus_test.cc
+CMakeFiles/run.dir/input_if.cc.o: CMakeFiles/run.dir/flags.make
+CMakeFiles/run.dir/input_if.cc.o: input_if.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sherk/Workspace/cc/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/run.dir/input_if.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/run.dir/input_if.cc.o -c /home/sherk/Workspace/cc/input_if.cc
 
-CMakeFiles/run.dir/biplus_test.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/run.dir/biplus_test.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sherk/Workspace/cc/biplus_test.cc > CMakeFiles/run.dir/biplus_test.cc.i
+CMakeFiles/run.dir/input_if.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/run.dir/input_if.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sherk/Workspace/cc/input_if.cc > CMakeFiles/run.dir/input_if.cc.i
 
-CMakeFiles/run.dir/biplus_test.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/run.dir/biplus_test.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sherk/Workspace/cc/biplus_test.cc -o CMakeFiles/run.dir/biplus_test.cc.s
+CMakeFiles/run.dir/input_if.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/run.dir/input_if.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sherk/Workspace/cc/input_if.cc -o CMakeFiles/run.dir/input_if.cc.s
 
-CMakeFiles/run.dir/biplus_test.cc.o.requires:
+CMakeFiles/run.dir/input_if.cc.o.requires:
 
-.PHONY : CMakeFiles/run.dir/biplus_test.cc.o.requires
+.PHONY : CMakeFiles/run.dir/input_if.cc.o.requires
 
-CMakeFiles/run.dir/biplus_test.cc.o.provides: CMakeFiles/run.dir/biplus_test.cc.o.requires
-	$(MAKE) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/biplus_test.cc.o.provides.build
-.PHONY : CMakeFiles/run.dir/biplus_test.cc.o.provides
+CMakeFiles/run.dir/input_if.cc.o.provides: CMakeFiles/run.dir/input_if.cc.o.requires
+	$(MAKE) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/input_if.cc.o.provides.build
+.PHONY : CMakeFiles/run.dir/input_if.cc.o.provides
 
-CMakeFiles/run.dir/biplus_test.cc.o.provides.build: CMakeFiles/run.dir/biplus_test.cc.o
+CMakeFiles/run.dir/input_if.cc.o.provides.build: CMakeFiles/run.dir/input_if.cc.o
 
 
 # Object files for target run
 run_OBJECTS = \
-"CMakeFiles/run.dir/biplus_test.cc.o"
+"CMakeFiles/run.dir/input_if.cc.o"
 
 # External object files for target run
 run_EXTERNAL_OBJECTS =
 
-run: CMakeFiles/run.dir/biplus_test.cc.o
+run: CMakeFiles/run.dir/input_if.cc.o
 run: CMakeFiles/run.dir/build.make
 run: CMakeFiles/run.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sherk/Workspace/cc/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable run"
@@ -99,7 +99,7 @@ CMakeFiles/run.dir/build: run
 
 .PHONY : CMakeFiles/run.dir/build
 
-CMakeFiles/run.dir/requires: CMakeFiles/run.dir/biplus_test.cc.o.requires
+CMakeFiles/run.dir/requires: CMakeFiles/run.dir/input_if.cc.o.requires
 
 .PHONY : CMakeFiles/run.dir/requires
 

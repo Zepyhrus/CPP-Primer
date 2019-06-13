@@ -17,6 +17,9 @@ int b = ++a;  // a + 1 before assigned to b, cal after a + 1;
 int c = a++;  // a + 1 after assigned to c, cal before a + 1;
 ```
 
+### 1.4.3 Reading an Unknown Number of INputs
+* The end of input is CTRL + d;
+* It is a good practice to recompile the code after each fix -- or after making at most a small number of obvious fixes. This is called *edit-compile-debug*.
 
 
 # Acknowledgmets

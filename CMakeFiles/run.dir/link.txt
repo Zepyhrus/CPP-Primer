@@ -1,1 +1,1 @@
-/usr/bin/c++    -rdynamic CMakeFiles/run.dir/biplus_test.cc.o  -o run 
+/usr/bin/c++    -rdynamic CMakeFiles/run.dir/input_if.cc.o  -o run 

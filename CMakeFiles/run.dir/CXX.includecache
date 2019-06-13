@@ -6,9 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/sherk/Workspace/cc/biplus_test.cc
+/home/sherk/Workspace/cc/input_if.cc
 iostream
--
-cstring
 -
 
