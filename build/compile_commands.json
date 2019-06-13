@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/sherk/Workspace/cc/build",
+  "command": "/usr/bin/g++-5    -g   -o CMakeFiles/run.dir/main.cc.o -c /home/sherk/Workspace/cc/main.cc",
+  "file": "/home/sherk/Workspace/cc/main.cc"
+}
+]

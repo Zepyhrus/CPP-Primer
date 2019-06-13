@@ -1,0 +1,3 @@
+/home/sherk/Workspace/cc/build/CMakeFiles/rebuild_cache.dir
+/home/sherk/Workspace/cc/build/CMakeFiles/run.dir
+/home/sherk/Workspace/cc/build/CMakeFiles/edit_cache.dir
