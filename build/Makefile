@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sherk/Workspace/cc
+CMAKE_SOURCE_DIR = /home/sherk/Workspace/CPP/CPP-Primer
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sherk/Workspace/cc/build
+CMAKE_BINARY_DIR = /home/sherk/Workspace/CPP/CPP-Primer/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sherk/Workspace/cc/build/CMakeFiles /home/sherk/Workspace/cc/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sherk/Workspace/CPP/CPP-Primer/build/CMakeFiles /home/sherk/Workspace/CPP/CPP-Primer/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sherk/Workspace/cc/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sherk/Workspace/CPP/CPP-Primer/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -123,32 +123,32 @@ run/fast:
 	$(MAKE) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/build
 .PHONY : run/fast
 
-main.o: main.cc.o
+input_if.o: input_if.cc.o
 
-.PHONY : main.o
+.PHONY : input_if.o
 
 # target to build an object file
-main.cc.o:
-	$(MAKE) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/main.cc.o
-.PHONY : main.cc.o
+input_if.cc.o:
+	$(MAKE) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/input_if.cc.o
+.PHONY : input_if.cc.o
 
-main.i: main.cc.i
+input_if.i: input_if.cc.i
 
-.PHONY : main.i
+.PHONY : input_if.i
 
 # target to preprocess a source file
-main.cc.i:
-	$(MAKE) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/main.cc.i
-.PHONY : main.cc.i
+input_if.cc.i:
+	$(MAKE) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/input_if.cc.i
+.PHONY : input_if.cc.i
 
-main.s: main.cc.s
+input_if.s: input_if.cc.s
 
-.PHONY : main.s
+.PHONY : input_if.s
 
 # target to generate assembly for a file
-main.cc.s:
-	$(MAKE) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/main.cc.s
-.PHONY : main.cc.s
+input_if.cc.s:
+	$(MAKE) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/input_if.cc.s
+.PHONY : input_if.cc.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... run"
 	@echo "... edit_cache"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... input_if.o"
+	@echo "... input_if.i"
+	@echo "... input_if.s"
 .PHONY : help
 
 

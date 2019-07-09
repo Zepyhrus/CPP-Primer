@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/run.dir/main.cc.o"
+  "CMakeFiles/run.dir/input_if.cc.o"
   "run.pdb"
   "run"
 )

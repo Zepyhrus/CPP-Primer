@@ -1,7 +1,7 @@
 [
 {
-  "directory": "/home/sherk/Workspace/cc/build",
-  "command": "/usr/bin/g++-5    -g   -o CMakeFiles/run.dir/main.cc.o -c /home/sherk/Workspace/cc/main.cc",
-  "file": "/home/sherk/Workspace/cc/main.cc"
+  "directory": "/home/sherk/Workspace/CPP/CPP-Primer/build",
+  "command": "/usr/bin/g++-7    -g   -o CMakeFiles/run.dir/input_if.cc.o -c /home/sherk/Workspace/CPP/CPP-Primer/input_if.cc",
+  "file": "/home/sherk/Workspace/CPP/CPP-Primer/input_if.cc"
 }
 ]

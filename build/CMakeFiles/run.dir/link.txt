@@ -1,1 +1,1 @@
-/usr/bin/g++-5  -g  -rdynamic CMakeFiles/run.dir/main.cc.o  -o run 
+/usr/bin/g++-7  -g  -rdynamic CMakeFiles/run.dir/input_if.cc.o  -o run 
