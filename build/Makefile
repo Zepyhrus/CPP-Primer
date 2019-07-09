@@ -120,35 +120,8 @@ run: cmake_check_build_system
 
 # fast build rule for target.
 run/fast:
-	$(MAKE) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/build
+	$(MAKE) -f src/CMakeFiles/run.dir/build.make src/CMakeFiles/run.dir/build
 .PHONY : run/fast
-
-input_if.o: input_if.cc.o
-
-.PHONY : input_if.o
-
-# target to build an object file
-input_if.cc.o:
-	$(MAKE) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/input_if.cc.o
-.PHONY : input_if.cc.o
-
-input_if.i: input_if.cc.i
-
-.PHONY : input_if.i
-
-# target to preprocess a source file
-input_if.cc.i:
-	$(MAKE) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/input_if.cc.i
-.PHONY : input_if.cc.i
-
-input_if.s: input_if.cc.s
-
-.PHONY : input_if.s
-
-# target to generate assembly for a file
-input_if.cc.s:
-	$(MAKE) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/input_if.cc.s
-.PHONY : input_if.cc.s
 
 # Help Target
 help:
@@ -157,11 +130,8 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... run"
 	@echo "... edit_cache"
-	@echo "... input_if.o"
-	@echo "... input_if.i"
-	@echo "... input_if.s"
+	@echo "... run"
 .PHONY : help
 
 

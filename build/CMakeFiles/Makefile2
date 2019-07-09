@@ -60,39 +60,57 @@ CMAKE_SOURCE_DIR = /home/sherk/Workspace/CPP/CPP-Primer
 CMAKE_BINARY_DIR = /home/sherk/Workspace/CPP/CPP-Primer/build
 
 #=============================================================================
-# Target rules for target CMakeFiles/run.dir
+# Directory level rules for directory src
+
+# Convenience name for "all" pass in the directory.
+src/all: src/CMakeFiles/run.dir/all
+
+.PHONY : src/all
+
+# Convenience name for "clean" pass in the directory.
+src/clean: src/CMakeFiles/run.dir/clean
+
+.PHONY : src/clean
+
+# Convenience name for "preinstall" pass in the directory.
+src/preinstall:
+
+.PHONY : src/preinstall
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/run.dir
 
 # All Build rule for target.
-CMakeFiles/run.dir/all:
-	$(MAKE) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/depend
-	$(MAKE) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/build
+src/CMakeFiles/run.dir/all:
+	$(MAKE) -f src/CMakeFiles/run.dir/build.make src/CMakeFiles/run.dir/depend
+	$(MAKE) -f src/CMakeFiles/run.dir/build.make src/CMakeFiles/run.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sherk/Workspace/CPP/CPP-Primer/build/CMakeFiles --progress-num=1,2 "Built target run"
-.PHONY : CMakeFiles/run.dir/all
+.PHONY : src/CMakeFiles/run.dir/all
 
 # Include target in all.
-all: CMakeFiles/run.dir/all
+all: src/CMakeFiles/run.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/run.dir/rule: cmake_check_build_system
+src/CMakeFiles/run.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/sherk/Workspace/CPP/CPP-Primer/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/run.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/run.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/sherk/Workspace/CPP/CPP-Primer/build/CMakeFiles 0
-.PHONY : CMakeFiles/run.dir/rule
+.PHONY : src/CMakeFiles/run.dir/rule
 
 # Convenience name for target.
-run: CMakeFiles/run.dir/rule
+run: src/CMakeFiles/run.dir/rule
 
 .PHONY : run
 
 # clean rule for target.
-CMakeFiles/run.dir/clean:
-	$(MAKE) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/clean
-.PHONY : CMakeFiles/run.dir/clean
+src/CMakeFiles/run.dir/clean:
+	$(MAKE) -f src/CMakeFiles/run.dir/build.make src/CMakeFiles/run.dir/clean
+.PHONY : src/CMakeFiles/run.dir/clean
 
 # clean rule for target.
-clean: CMakeFiles/run.dir/clean
+clean: src/CMakeFiles/run.dir/clean
 
 .PHONY : clean
 
