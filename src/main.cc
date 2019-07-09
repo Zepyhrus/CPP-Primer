@@ -11,26 +11,26 @@
 
 int main()
 {
-    std::cout << "Let's take some input:\n";
-    int a, b;
+  std::cout << "Let's take some input:\n";
+  int a, b;
 
-    std::cin >> a >> b;
+  std::cin >> a >> b;
 
-    int min, max;
-    if (a <= b) {
-        min = a;
-        max = b;
-    } else {
-        min = b;
-        max = a;
-    }
+  int min, max;
+  if (a <= b) {
+    min = a;
+    max = b;
+  } else {
+    min = b;
+    max = a;
+  }
 
-    while (min <= max)
-    {
-        std::cout << min++ << std::endl;
-    }   
+  while (min <= max)
+  {
+    std::cout << min++ << std::endl;
+  }   
 
 
-    return 0;
+  return 0;
 }
 
