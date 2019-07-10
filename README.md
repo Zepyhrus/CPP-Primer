@@ -23,6 +23,10 @@ int c = a++;  // a + 1 after assigned to c, cal before a + 1;
 * exercise at input_if.cc
 
 
+## 1.5 Introducing Classes
+
+
+
 # Acknowledgmets
 * With all respect to Mr. Zeng Xianliang, my colleague, who introduced this stunning book to me which he himself never really read it thoughly;
 * Full respect to the author of the book: Cpp Primer, Stanley B. Lippman, Josee Lajoie, Barbara E. Moo. Their great works perserves;
