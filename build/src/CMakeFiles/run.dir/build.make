@@ -60,15 +60,15 @@ include src/CMakeFiles/run.dir/flags.make
 src/CMakeFiles/run.dir/input_if.cc.o: src/CMakeFiles/run.dir/flags.make
 src/CMakeFiles/run.dir/input_if.cc.o: ../src/input_if.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sherk/Workspace/CPP/CPP-Primer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/run.dir/input_if.cc.o"
-	cd /home/sherk/Workspace/CPP/CPP-Primer/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/run.dir/input_if.cc.o -c /home/sherk/Workspace/CPP/CPP-Primer/src/input_if.cc
+	cd /home/sherk/Workspace/CPP/CPP-Primer/build/src && /usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/run.dir/input_if.cc.o -c /home/sherk/Workspace/CPP/CPP-Primer/src/input_if.cc
 
 src/CMakeFiles/run.dir/input_if.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/run.dir/input_if.cc.i"
-	cd /home/sherk/Workspace/CPP/CPP-Primer/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sherk/Workspace/CPP/CPP-Primer/src/input_if.cc > CMakeFiles/run.dir/input_if.cc.i
+	cd /home/sherk/Workspace/CPP/CPP-Primer/build/src && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sherk/Workspace/CPP/CPP-Primer/src/input_if.cc > CMakeFiles/run.dir/input_if.cc.i
 
 src/CMakeFiles/run.dir/input_if.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/run.dir/input_if.cc.s"
-	cd /home/sherk/Workspace/CPP/CPP-Primer/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sherk/Workspace/CPP/CPP-Primer/src/input_if.cc -o CMakeFiles/run.dir/input_if.cc.s
+	cd /home/sherk/Workspace/CPP/CPP-Primer/build/src && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sherk/Workspace/CPP/CPP-Primer/src/input_if.cc -o CMakeFiles/run.dir/input_if.cc.s
 
 src/CMakeFiles/run.dir/input_if.cc.o.requires:
 
