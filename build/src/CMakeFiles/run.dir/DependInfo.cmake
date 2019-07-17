@@ -4,12 +4,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/sherk/Workspace/CPP/CPP-Primer/src/input_if.cc" "/home/sherk/Workspace/CPP/CPP-Primer/build/src/CMakeFiles/run.dir/input_if.cc.o"
+  "/home/sherk/Workspace/CPP/CPP-Primer/src/Sales_item.cc" "/home/sherk/Workspace/CPP/CPP-Primer/build/src/CMakeFiles/run.dir/Sales_item.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "../answers"
   )
 
 # Targets to which this target links.

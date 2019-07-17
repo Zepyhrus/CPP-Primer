@@ -3,3 +3,5 @@
 /home/sherk/Workspace/CPP/CPP-Primer/build/src/CMakeFiles/rebuild_cache.dir
 /home/sherk/Workspace/CPP/CPP-Primer/build/src/CMakeFiles/run.dir
 /home/sherk/Workspace/CPP/CPP-Primer/build/src/CMakeFiles/edit_cache.dir
+/home/sherk/Workspace/CPP/CPP-Primer/build/answers/CMakeFiles/rebuild_cache.dir
+/home/sherk/Workspace/CPP/CPP-Primer/build/answers/CMakeFiles/edit_cache.dir

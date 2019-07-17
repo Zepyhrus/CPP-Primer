@@ -6,7 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/sherk/Workspace/CPP/CPP-Primer/src/input_if.cc
+../answers/1/Sales_item.h
 iostream
 -
+string
+-
+
+/home/sherk/Workspace/CPP/CPP-Primer/src/Sales_item.cc
+iostream
+-
+1/Sales_item.h
+/home/sherk/Workspace/CPP/CPP-Primer/src/1/Sales_item.h
 

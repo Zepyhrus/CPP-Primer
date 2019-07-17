@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/run.dir/input_if.cc.o"
-  "run.pdb"
-  "run"
+  "CMakeFiles/run.dir/Sales_item.cc.o"
+  "../../bin/run.pdb"
+  "../../bin/run"
 )
 
 # Per-language clean rules from dependency scanning.

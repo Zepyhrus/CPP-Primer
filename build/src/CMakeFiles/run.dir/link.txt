@@ -1,1 +1,1 @@
-/usr/bin/g++-7    -rdynamic CMakeFiles/run.dir/input_if.cc.o  -o run 
+/usr/bin/g++-7  -g  -rdynamic CMakeFiles/run.dir/Sales_item.cc.o  -o ../../bin/run 

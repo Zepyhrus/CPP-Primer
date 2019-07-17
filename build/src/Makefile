@@ -125,32 +125,32 @@ run/fast:
 	cd /home/sherk/Workspace/CPP/CPP-Primer/build && $(MAKE) -f src/CMakeFiles/run.dir/build.make src/CMakeFiles/run.dir/build
 .PHONY : run/fast
 
-input_if.o: input_if.cc.o
+Sales_item.o: Sales_item.cc.o
 
-.PHONY : input_if.o
+.PHONY : Sales_item.o
 
 # target to build an object file
-input_if.cc.o:
-	cd /home/sherk/Workspace/CPP/CPP-Primer/build && $(MAKE) -f src/CMakeFiles/run.dir/build.make src/CMakeFiles/run.dir/input_if.cc.o
-.PHONY : input_if.cc.o
+Sales_item.cc.o:
+	cd /home/sherk/Workspace/CPP/CPP-Primer/build && $(MAKE) -f src/CMakeFiles/run.dir/build.make src/CMakeFiles/run.dir/Sales_item.cc.o
+.PHONY : Sales_item.cc.o
 
-input_if.i: input_if.cc.i
+Sales_item.i: Sales_item.cc.i
 
-.PHONY : input_if.i
+.PHONY : Sales_item.i
 
 # target to preprocess a source file
-input_if.cc.i:
-	cd /home/sherk/Workspace/CPP/CPP-Primer/build && $(MAKE) -f src/CMakeFiles/run.dir/build.make src/CMakeFiles/run.dir/input_if.cc.i
-.PHONY : input_if.cc.i
+Sales_item.cc.i:
+	cd /home/sherk/Workspace/CPP/CPP-Primer/build && $(MAKE) -f src/CMakeFiles/run.dir/build.make src/CMakeFiles/run.dir/Sales_item.cc.i
+.PHONY : Sales_item.cc.i
 
-input_if.s: input_if.cc.s
+Sales_item.s: Sales_item.cc.s
 
-.PHONY : input_if.s
+.PHONY : Sales_item.s
 
 # target to generate assembly for a file
-input_if.cc.s:
-	cd /home/sherk/Workspace/CPP/CPP-Primer/build && $(MAKE) -f src/CMakeFiles/run.dir/build.make src/CMakeFiles/run.dir/input_if.cc.s
-.PHONY : input_if.cc.s
+Sales_item.cc.s:
+	cd /home/sherk/Workspace/CPP/CPP-Primer/build && $(MAKE) -f src/CMakeFiles/run.dir/build.make src/CMakeFiles/run.dir/Sales_item.cc.s
+.PHONY : Sales_item.cc.s
 
 # Help Target
 help:
@@ -161,9 +161,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... run"
 	@echo "... edit_cache"
-	@echo "... input_if.o"
-	@echo "... input_if.i"
-	@echo "... input_if.s"
+	@echo "... Sales_item.o"
+	@echo "... Sales_item.i"
+	@echo "... Sales_item.s"
 .PHONY : help
 
 
