@@ -24,7 +24,16 @@ int c = a++;  // a + 1 after assigned to c, cal before a + 1;
 
 
 ## 1.5 Introducing Classes
+1. Memeber function: a function that is defined as part of a class, sometimes referred to as **methods**;
 
+2. `()`: the `call` operator;
+* Uninitialized variables are a rich source of bugs;
+
+
+# Part I
+# Chapter 2 Varibales and Basic Types
+Some languages, such as Smalltalk and Python, check types at run time. In contrast, C++ is a statically typed language: type checking is done at compile time.
+As a consequence, the compiler must know the type of every name used in the program.
 
 
 # Acknowledgmets
