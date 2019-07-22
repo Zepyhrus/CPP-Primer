@@ -125,33 +125,6 @@ run/fast:
 	cd /home/sherk/Workspace/CPP/CPP-Primer/build && $(MAKE) -f src/CMakeFiles/run.dir/build.make src/CMakeFiles/run.dir/build
 .PHONY : run/fast
 
-Sales_item.o: Sales_item.cc.o
-
-.PHONY : Sales_item.o
-
-# target to build an object file
-Sales_item.cc.o:
-	cd /home/sherk/Workspace/CPP/CPP-Primer/build && $(MAKE) -f src/CMakeFiles/run.dir/build.make src/CMakeFiles/run.dir/Sales_item.cc.o
-.PHONY : Sales_item.cc.o
-
-Sales_item.i: Sales_item.cc.i
-
-.PHONY : Sales_item.i
-
-# target to preprocess a source file
-Sales_item.cc.i:
-	cd /home/sherk/Workspace/CPP/CPP-Primer/build && $(MAKE) -f src/CMakeFiles/run.dir/build.make src/CMakeFiles/run.dir/Sales_item.cc.i
-.PHONY : Sales_item.cc.i
-
-Sales_item.s: Sales_item.cc.s
-
-.PHONY : Sales_item.s
-
-# target to generate assembly for a file
-Sales_item.cc.s:
-	cd /home/sherk/Workspace/CPP/CPP-Primer/build && $(MAKE) -f src/CMakeFiles/run.dir/build.make src/CMakeFiles/run.dir/Sales_item.cc.s
-.PHONY : Sales_item.cc.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -161,9 +134,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... run"
 	@echo "... edit_cache"
-	@echo "... Sales_item.o"
-	@echo "... Sales_item.i"
-	@echo "... Sales_item.s"
 .PHONY : help
 
 

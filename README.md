@@ -62,6 +62,43 @@ IN an unsigned type, all the bits represent the value. An 8-bit `unsigned` char 
 * Do not use plain `char` or `bool` in arithmetic expressions. Use them *only* to hold characters or thuth values. Computtations using `char` are especially problematic because `char` is signed on some machines and `unsigned` on others.
 * Use `double` for floating-point computatins. `float` usually odes not have enough precision and the cosst of double-percision calculations versus single-precision is negligible. In fact, on some machines, **double-precision operations are faster than single**[P34]. 
 
+### 2.1.2 Type Conversions
+1. non`bool` arithmetic types to a `bool` object, the result is `false` if the value is 0 and `true` otherwise;
+2. `bool true` is 1 and `bool false` is 0;
+3. Assigning a floating-point value to an object of integral type, the value is truncated.
+4. When an integral value to an object of floating-point type, the frational part is zero. Precision may be lost ifg the integer has more bits than the floating-point object can accommodate. 
+5. OOR (out-of-range) value to unsigned type, the result is the remainder of the value modulo the number of values the target type can hold.
+6. OOR value to signed type, the reult is **undefined**. Undefined behavior results from errors that the compiler is not requierd to detect. 
+
+
+
+### 2.1.3 Literals
+### Integer and Floating-Point Literals
+* decimal: You should know what a decimal is you stpuid fuck;
+* octal: Integer literals that begin with 0, for example 024;
+* hexadecimal: Integer literals that begin with 0x or 0X;
+
+**Note**: For a negative decimal literal, -42, the minus sign is *not* part of the literal, the minus sign is an operator that negates the value of its (literal) operand.
+
+### Character and Character String Literals
+The compiler appends a null character (`\0`) to every string literal. Thus the actual size of a string literal is one more than its apparent size. 
+
+### Escape Sequences
+An **escape sequence** begins with a backslash. 
+
+### Specifying the Type of a Literal
+We can override the default type of an integer, floating-point, or character lietral by supylying a suffix or prefix from Table 2.2 [P40];
+```
+42ULL     // unsigned integer litearal, type is unsigned long long
+```
+
+### Boolean and Pointer Literals
+```
+bool test = false;  // true or false are literals of type bool;
+```
+
+
+
 
 # Acknowledgmets
 * With all respect to Mr. Zeng Xianliang, my colleague, who introduced this stunning book to me which he himself never really read it thoughly;
