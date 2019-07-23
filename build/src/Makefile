@@ -125,6 +125,33 @@ run/fast:
 	cd /home/sherk/Workspace/CPP/CPP-Primer/build && $(MAKE) -f src/CMakeFiles/run.dir/build.make src/CMakeFiles/run.dir/build
 .PHONY : run/fast
 
+e2_14.o: e2_14.cc.o
+
+.PHONY : e2_14.o
+
+# target to build an object file
+e2_14.cc.o:
+	cd /home/sherk/Workspace/CPP/CPP-Primer/build && $(MAKE) -f src/CMakeFiles/run.dir/build.make src/CMakeFiles/run.dir/e2_14.cc.o
+.PHONY : e2_14.cc.o
+
+e2_14.i: e2_14.cc.i
+
+.PHONY : e2_14.i
+
+# target to preprocess a source file
+e2_14.cc.i:
+	cd /home/sherk/Workspace/CPP/CPP-Primer/build && $(MAKE) -f src/CMakeFiles/run.dir/build.make src/CMakeFiles/run.dir/e2_14.cc.i
+.PHONY : e2_14.cc.i
+
+e2_14.s: e2_14.cc.s
+
+.PHONY : e2_14.s
+
+# target to generate assembly for a file
+e2_14.cc.s:
+	cd /home/sherk/Workspace/CPP/CPP-Primer/build && $(MAKE) -f src/CMakeFiles/run.dir/build.make src/CMakeFiles/run.dir/e2_14.cc.s
+.PHONY : e2_14.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -134,6 +161,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... run"
 	@echo "... edit_cache"
+	@echo "... e2_14.o"
+	@echo "... e2_14.i"
+	@echo "... e2_14.s"
 .PHONY : help
 
 

@@ -1,5 +1,5 @@
 # Cpp Primer
-This a implementation of some of the exercises from the book: C++ Primer. And also some notes from the book.
+This a implementation of some of the exercises from the book: C++ Primer. And also some notes from the book. The github source could be found [here](https://github.com/Zepyhrus/CPP-Primer).
 
 ## Getting Started
 
@@ -97,8 +97,46 @@ We can override the default type of an integer, floating-point, or character lie
 bool test = false;  // true or false are literals of type bool;
 ```
 
+## 2.2 Variables
+### 2.2.1 Variable Definitions
+Most generally, an object is a region of memory that can contain data and has a type. 
+
+### INitializers
+**Initilaizer**: An object gets the specified value at the moment it is created. 
+
+The initialization an d assignment are different operations in C++. Initialization happens when a variable is given a value when it is created. Assignment obliterates an object's current value and replaces that value with a new one. 
+
+### List Initialization
+```
+int units_sold = {0};
+int units_sold{0};
+```
+The curly braces for initializeation was introduced as part of the new standard, which is referred to as **list initalization**. 
+
+**Import**: this form of initialization will not be allowed if the initializer might lead to the loss of information by compiler. 
+
+### Default INitialization
+When a varibale is defined without an initializer, it is **default initialized**. One excpetion, variables of built-in type defined inside a function are **uninitialized**. 
 
 
+### 2.2.2 Variable Declarations and Definitions
+Use `extern` to explict declare variable without defination. It is an error to provide an initializer on an `extern` inside a function. `extern` with an initializer is an defination. 
+```
+extern int i;  // declares but does not define i
+int j;         // declares and defines j
+```
+**Note**: Varibales must be defined exactly once but can be declared many times.
+
+
+### 2.2.3 Identifiers
+* The identifier in programs may not contain two consective underscores;
+* Nor can an identifier begin with an underscore followed immediately by an uppercase letter;
+* Identifiers defined outside a function may not begin with an underscore. 
+
+
+### 2.2.4 Scope of a Name
+### Nested Scopes
+The global scope has no name, hence when the scope operator has an empty left-hand side, it is a request to fetch the name on the right-hand side from the global scope.
 
 # Acknowledgmets
 * With all respect to Mr. Zeng Xianliang, my colleague, who introduced this stunning book to me which he himself never really read it thoughly;
