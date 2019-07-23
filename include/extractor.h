@@ -1,6 +1,5 @@
 #include <torch/script.h>
 #include <opencv2/opencv.hpp>
-#include <boost/filesystem.hpp>
 
 #define FEATUREDIM 512
 
@@ -18,16 +17,6 @@ void FaceAlign(
 	const cv::Mat& imageSrc,
 	std::vector<cv::Point>& landmarks,
 	cv::Mat& faceImg);
-
-/* save file to binary file */
-void WriteFeature(float* feature, std::string filename);
-
-
-/* get all `files` with specific `exd` from `path` */
-void GetFiles(
-	std::string& root,
-	std::vector<std::string>& ret);
-
 
 class Extractor
 {
@@ -53,12 +42,6 @@ public:
 
   /* generate feature vector */
   void recognize(cv::Mat& imageSrc, float* feature);
-
-  /* read feature vector from file list */
-  bool ReadFeature(float* rfea);
-
-  /* write feature to file */
-  void WriteFeature(float* feature, std::string filename);
 
 private:
   torch::jit::script::Module mmodel;

@@ -125,32 +125,32 @@ run/fast:
 	cd /home/sherk/Workspace/CPP/CPP-Primer/build && $(MAKE) -f src/CMakeFiles/run.dir/build.make src/CMakeFiles/run.dir/build
 .PHONY : run/fast
 
-e2_14.o: e2_14.cc.o
+main.o: main.cc.o
 
-.PHONY : e2_14.o
+.PHONY : main.o
 
 # target to build an object file
-e2_14.cc.o:
-	cd /home/sherk/Workspace/CPP/CPP-Primer/build && $(MAKE) -f src/CMakeFiles/run.dir/build.make src/CMakeFiles/run.dir/e2_14.cc.o
-.PHONY : e2_14.cc.o
+main.cc.o:
+	cd /home/sherk/Workspace/CPP/CPP-Primer/build && $(MAKE) -f src/CMakeFiles/run.dir/build.make src/CMakeFiles/run.dir/main.cc.o
+.PHONY : main.cc.o
 
-e2_14.i: e2_14.cc.i
+main.i: main.cc.i
 
-.PHONY : e2_14.i
+.PHONY : main.i
 
 # target to preprocess a source file
-e2_14.cc.i:
-	cd /home/sherk/Workspace/CPP/CPP-Primer/build && $(MAKE) -f src/CMakeFiles/run.dir/build.make src/CMakeFiles/run.dir/e2_14.cc.i
-.PHONY : e2_14.cc.i
+main.cc.i:
+	cd /home/sherk/Workspace/CPP/CPP-Primer/build && $(MAKE) -f src/CMakeFiles/run.dir/build.make src/CMakeFiles/run.dir/main.cc.i
+.PHONY : main.cc.i
 
-e2_14.s: e2_14.cc.s
+main.s: main.cc.s
 
-.PHONY : e2_14.s
+.PHONY : main.s
 
 # target to generate assembly for a file
-e2_14.cc.s:
-	cd /home/sherk/Workspace/CPP/CPP-Primer/build && $(MAKE) -f src/CMakeFiles/run.dir/build.make src/CMakeFiles/run.dir/e2_14.cc.s
-.PHONY : e2_14.cc.s
+main.cc.s:
+	cd /home/sherk/Workspace/CPP/CPP-Primer/build && $(MAKE) -f src/CMakeFiles/run.dir/build.make src/CMakeFiles/run.dir/main.cc.s
+.PHONY : main.cc.s
 
 # Help Target
 help:
@@ -159,11 +159,11 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... run"
 	@echo "... edit_cache"
-	@echo "... e2_14.o"
-	@echo "... e2_14.i"
-	@echo "... e2_14.s"
+	@echo "... run"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 

@@ -1,4 +1,8 @@
+# ignore folders
 .vscode
-
+image
 build
+bin
+lib
+model
 

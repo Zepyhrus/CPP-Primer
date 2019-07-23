@@ -57,39 +57,55 @@ include src/CMakeFiles/run.dir/progress.make
 # Include the compile flags for this target's objects.
 include src/CMakeFiles/run.dir/flags.make
 
-src/CMakeFiles/run.dir/e2_14.cc.o: src/CMakeFiles/run.dir/flags.make
-src/CMakeFiles/run.dir/e2_14.cc.o: ../src/e2_14.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sherk/Workspace/CPP/CPP-Primer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/run.dir/e2_14.cc.o"
-	cd /home/sherk/Workspace/CPP/CPP-Primer/build/src && /usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/run.dir/e2_14.cc.o -c /home/sherk/Workspace/CPP/CPP-Primer/src/e2_14.cc
+src/CMakeFiles/run.dir/main.cc.o: src/CMakeFiles/run.dir/flags.make
+src/CMakeFiles/run.dir/main.cc.o: ../src/main.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sherk/Workspace/CPP/CPP-Primer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/run.dir/main.cc.o"
+	cd /home/sherk/Workspace/CPP/CPP-Primer/build/src && /usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/run.dir/main.cc.o -c /home/sherk/Workspace/CPP/CPP-Primer/src/main.cc
 
-src/CMakeFiles/run.dir/e2_14.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/run.dir/e2_14.cc.i"
-	cd /home/sherk/Workspace/CPP/CPP-Primer/build/src && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sherk/Workspace/CPP/CPP-Primer/src/e2_14.cc > CMakeFiles/run.dir/e2_14.cc.i
+src/CMakeFiles/run.dir/main.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/run.dir/main.cc.i"
+	cd /home/sherk/Workspace/CPP/CPP-Primer/build/src && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sherk/Workspace/CPP/CPP-Primer/src/main.cc > CMakeFiles/run.dir/main.cc.i
 
-src/CMakeFiles/run.dir/e2_14.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/run.dir/e2_14.cc.s"
-	cd /home/sherk/Workspace/CPP/CPP-Primer/build/src && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sherk/Workspace/CPP/CPP-Primer/src/e2_14.cc -o CMakeFiles/run.dir/e2_14.cc.s
+src/CMakeFiles/run.dir/main.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/run.dir/main.cc.s"
+	cd /home/sherk/Workspace/CPP/CPP-Primer/build/src && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sherk/Workspace/CPP/CPP-Primer/src/main.cc -o CMakeFiles/run.dir/main.cc.s
 
-src/CMakeFiles/run.dir/e2_14.cc.o.requires:
+src/CMakeFiles/run.dir/main.cc.o.requires:
 
-.PHONY : src/CMakeFiles/run.dir/e2_14.cc.o.requires
+.PHONY : src/CMakeFiles/run.dir/main.cc.o.requires
 
-src/CMakeFiles/run.dir/e2_14.cc.o.provides: src/CMakeFiles/run.dir/e2_14.cc.o.requires
-	$(MAKE) -f src/CMakeFiles/run.dir/build.make src/CMakeFiles/run.dir/e2_14.cc.o.provides.build
-.PHONY : src/CMakeFiles/run.dir/e2_14.cc.o.provides
+src/CMakeFiles/run.dir/main.cc.o.provides: src/CMakeFiles/run.dir/main.cc.o.requires
+	$(MAKE) -f src/CMakeFiles/run.dir/build.make src/CMakeFiles/run.dir/main.cc.o.provides.build
+.PHONY : src/CMakeFiles/run.dir/main.cc.o.provides
 
-src/CMakeFiles/run.dir/e2_14.cc.o.provides.build: src/CMakeFiles/run.dir/e2_14.cc.o
+src/CMakeFiles/run.dir/main.cc.o.provides.build: src/CMakeFiles/run.dir/main.cc.o
 
 
 # Object files for target run
 run_OBJECTS = \
-"CMakeFiles/run.dir/e2_14.cc.o"
+"CMakeFiles/run.dir/main.cc.o"
 
 # External object files for target run
 run_EXTERNAL_OBJECTS =
 
-../bin/run: src/CMakeFiles/run.dir/e2_14.cc.o
+../bin/run: src/CMakeFiles/run.dir/main.cc.o
 ../bin/run: src/CMakeFiles/run.dir/build.make
+../bin/run: /home/sherk/Workspace/pytorch/torch/lib/libtorch.so
+../bin/run: /home/sherk/Workspace/pytorch/torch/lib/libc10.so
+../bin/run: /usr/lib/x86_64-linux-gnu/libcuda.so
+../bin/run: /usr/local/cuda/lib64/libnvrtc.so
+../bin/run: /usr/local/cuda/lib64/libnvToolsExt.so
+../bin/run: /usr/local/cuda/lib64/libcudart.so
+../bin/run: /home/sherk/Workspace/pytorch/torch/lib/libc10_cuda.so
+../bin/run: /usr/lib/x86_64-linux-gnu/libgflags.so.2.2.1
+../bin/run: /home/sherk/Workspace/pytorch/torch/lib/libc10_cuda.so
+../bin/run: /home/sherk/Workspace/pytorch/torch/lib/libc10.so
+../bin/run: /home/sherk/anaconda3/envs/torch-gpu/lib/libnvToolsExt.so
+../bin/run: /usr/local/cuda/lib64/libcudart.so
+../bin/run: /usr/local/cuda/lib64/libcufft.so
+../bin/run: /usr/local/cuda/lib64/libcurand.so
+../bin/run: /usr/local/cuda/lib64/libcudnn.so
+../bin/run: /usr/local/cuda/lib64/libcublas.so
 ../bin/run: src/CMakeFiles/run.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sherk/Workspace/CPP/CPP-Primer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../bin/run"
 	cd /home/sherk/Workspace/CPP/CPP-Primer/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/run.dir/link.txt --verbose=$(VERBOSE)
@@ -99,7 +115,7 @@ src/CMakeFiles/run.dir/build: ../bin/run
 
 .PHONY : src/CMakeFiles/run.dir/build
 
-src/CMakeFiles/run.dir/requires: src/CMakeFiles/run.dir/e2_14.cc.o.requires
+src/CMakeFiles/run.dir/requires: src/CMakeFiles/run.dir/main.cc.o.requires
 
 .PHONY : src/CMakeFiles/run.dir/requires
 
