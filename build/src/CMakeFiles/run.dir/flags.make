@@ -6,5 +6,5 @@ CXX_FLAGS = -g   -D_GLIBCXX_USE_CXX11_ABI=1
 
 CXX_DEFINES = -DAT_PARALLEL_OPENMP=1 -DGFLAGS_IS_A_DLL=0 -D_THP_CORE
 
-CXX_INCLUDES = -I/home/sherk/Workspace/CPP/CPP-Primer/src -isystem /home/sherk/Workspace/pytorch/torch/include -isystem /home/sherk/Workspace/pytorch/torch/include/torch/csrc/api/include -I/home/sherk/Workspace/CPP/CPP-Primer/answers -I/home/sherk/Workspace/CPP/CPP-Primer/include -isystem /usr/local/cuda/include 
+CXX_INCLUDES = -I/home/sherk/Workspace/CPP/CPP-Primer/src -isystem /home/sherk/Workspace/pytorch/torch/include -isystem /home/sherk/Workspace/pytorch/torch/include/torch/csrc/api/include -I/home/sherk/Workspace/CPP/CPP-Primer/answers -I/home/sherk/Workspace/CPP/CPP-Primer/include -I/home/sherk/Workspace/CPP/CPP-Primer/third_party -isystem /usr/local/cuda/include 
 

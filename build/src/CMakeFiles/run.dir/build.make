@@ -57,38 +57,38 @@ include src/CMakeFiles/run.dir/progress.make
 # Include the compile flags for this target's objects.
 include src/CMakeFiles/run.dir/flags.make
 
-src/CMakeFiles/run.dir/main.cc.o: src/CMakeFiles/run.dir/flags.make
-src/CMakeFiles/run.dir/main.cc.o: ../src/main.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sherk/Workspace/CPP/CPP-Primer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/run.dir/main.cc.o"
-	cd /home/sherk/Workspace/CPP/CPP-Primer/build/src && /usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/run.dir/main.cc.o -c /home/sherk/Workspace/CPP/CPP-Primer/src/main.cc
+src/CMakeFiles/run.dir/main.cpp.o: src/CMakeFiles/run.dir/flags.make
+src/CMakeFiles/run.dir/main.cpp.o: ../src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sherk/Workspace/CPP/CPP-Primer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/run.dir/main.cpp.o"
+	cd /home/sherk/Workspace/CPP/CPP-Primer/build/src && /usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/run.dir/main.cpp.o -c /home/sherk/Workspace/CPP/CPP-Primer/src/main.cpp
 
-src/CMakeFiles/run.dir/main.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/run.dir/main.cc.i"
-	cd /home/sherk/Workspace/CPP/CPP-Primer/build/src && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sherk/Workspace/CPP/CPP-Primer/src/main.cc > CMakeFiles/run.dir/main.cc.i
+src/CMakeFiles/run.dir/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/run.dir/main.cpp.i"
+	cd /home/sherk/Workspace/CPP/CPP-Primer/build/src && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sherk/Workspace/CPP/CPP-Primer/src/main.cpp > CMakeFiles/run.dir/main.cpp.i
 
-src/CMakeFiles/run.dir/main.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/run.dir/main.cc.s"
-	cd /home/sherk/Workspace/CPP/CPP-Primer/build/src && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sherk/Workspace/CPP/CPP-Primer/src/main.cc -o CMakeFiles/run.dir/main.cc.s
+src/CMakeFiles/run.dir/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/run.dir/main.cpp.s"
+	cd /home/sherk/Workspace/CPP/CPP-Primer/build/src && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sherk/Workspace/CPP/CPP-Primer/src/main.cpp -o CMakeFiles/run.dir/main.cpp.s
 
-src/CMakeFiles/run.dir/main.cc.o.requires:
+src/CMakeFiles/run.dir/main.cpp.o.requires:
 
-.PHONY : src/CMakeFiles/run.dir/main.cc.o.requires
+.PHONY : src/CMakeFiles/run.dir/main.cpp.o.requires
 
-src/CMakeFiles/run.dir/main.cc.o.provides: src/CMakeFiles/run.dir/main.cc.o.requires
-	$(MAKE) -f src/CMakeFiles/run.dir/build.make src/CMakeFiles/run.dir/main.cc.o.provides.build
-.PHONY : src/CMakeFiles/run.dir/main.cc.o.provides
+src/CMakeFiles/run.dir/main.cpp.o.provides: src/CMakeFiles/run.dir/main.cpp.o.requires
+	$(MAKE) -f src/CMakeFiles/run.dir/build.make src/CMakeFiles/run.dir/main.cpp.o.provides.build
+.PHONY : src/CMakeFiles/run.dir/main.cpp.o.provides
 
-src/CMakeFiles/run.dir/main.cc.o.provides.build: src/CMakeFiles/run.dir/main.cc.o
+src/CMakeFiles/run.dir/main.cpp.o.provides.build: src/CMakeFiles/run.dir/main.cpp.o
 
 
 # Object files for target run
 run_OBJECTS = \
-"CMakeFiles/run.dir/main.cc.o"
+"CMakeFiles/run.dir/main.cpp.o"
 
 # External object files for target run
 run_EXTERNAL_OBJECTS =
 
-../bin/run: src/CMakeFiles/run.dir/main.cc.o
+../bin/run: src/CMakeFiles/run.dir/main.cpp.o
 ../bin/run: src/CMakeFiles/run.dir/build.make
 ../bin/run: /home/sherk/Workspace/pytorch/torch/lib/libtorch.so
 ../bin/run: /home/sherk/Workspace/pytorch/torch/lib/libc10.so
@@ -115,7 +115,7 @@ src/CMakeFiles/run.dir/build: ../bin/run
 
 .PHONY : src/CMakeFiles/run.dir/build
 
-src/CMakeFiles/run.dir/requires: src/CMakeFiles/run.dir/main.cc.o.requires
+src/CMakeFiles/run.dir/requires: src/CMakeFiles/run.dir/main.cpp.o.requires
 
 .PHONY : src/CMakeFiles/run.dir/requires
 

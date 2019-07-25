@@ -20,11 +20,12 @@ find_package(gflags REQUIRED)
 
 include_directories(${PROJECT_SOURCE_DIR}/answers)
 include_directories(${PROJECT_SOURCE_DIR}/include)
+include_directories(${PROJECT_SOURCE_DIR}/third_party)
 
 link_directories(${PROJECT_SOURCE_DIR}/lib)
 
 
-add_executable(run main.cc)
+add_executable(run main.cpp)
 
 
 set(OPENCV_LIBS opencv_core opencv_imgproc opencv_imgcodecs opencv_videoio opencv_highgui)

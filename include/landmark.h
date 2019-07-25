@@ -3,6 +3,9 @@
 
 #define LANDMARKNUMBER 5
 
+typedef void* MarkerDriver;
+
+
 struct LandmarkerConfig {
   torch::DeviceType device_type;
 	int gpu_id;

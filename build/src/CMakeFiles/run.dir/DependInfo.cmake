@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/sherk/Workspace/CPP/CPP-Primer/src/main.cc" "/home/sherk/Workspace/CPP/CPP-Primer/build/src/CMakeFiles/run.dir/main.cc.o"
+  "/home/sherk/Workspace/CPP/CPP-Primer/src/main.cpp" "/home/sherk/Workspace/CPP/CPP-Primer/build/src/CMakeFiles/run.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -22,6 +22,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/sherk/Workspace/pytorch/torch/include/torch/csrc/api/include"
   "../answers"
   "../include"
+  "../third_party"
   "/usr/local/cuda/include"
   )
 

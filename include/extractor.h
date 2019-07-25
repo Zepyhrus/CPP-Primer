@@ -1,49 +1,53 @@
-#include <torch/script.h>
-#include <opencv2/opencv.hpp>
+#include <vector>
+#include <string>
+#include "opencv2/core/core.hpp"
+#include "mtcnn.h"
+#include "landmark.h"
+#include "feature.h"
 
-#define FEATUREDIM 512
+#define LANDMARKNUMBER 5
 
+struct config_t {
+	bool use_gpu;
+	int min_face;
+	double scale_factor;
 
-struct ExtractorConfig {
-  torch::DeviceType device_type;
-  int gpu_id;
+	std::string pnet_file;
+	std::string rnet_file;
+	std::string onet_file;
 
-  std::string featureDir;         // dir to store all features
-  std::string model_path;
+	std::string net_all;
+	std::string net_top;
+	std::string net_bot;
+
+	std::string feature_model;
 };
 
-/* generate the specific size from source image and landmark */
-void FaceAlign(
-	const cv::Mat& imageSrc,
-	std::vector<cv::Point>& landmarks,
-	cv::Mat& faceImg);
 
 class Extractor
 {
 public:
-  /* properties for recognition:
-   * suffix d, stands for variables on GPU;
-   * suffix h, stands for variables on CPU;
-   */
-  std::string featureDir;   // dir to store all featuers
-  int    allFeatureNumber;  // number of feature library
-  std::vector<std::string> featureIDs;  // feature ids
+	Extractor();
+	~Extractor();
+
+	bool init(const config_t& config);
+
+	int extract(cv::Mat& image, float* feature);
+
 public:
-  Extractor();
-  ~Extractor();
-
-  /* initialize the model */
-  int init(const ExtractorConfig& config);
-
-
-  /* preprocess image */
-  void preprocess(cv::Mat& imageSrc, torch::Tensor& tensor_image);
-
-
-  /* generate feature vector */
-  void recognize(cv::Mat& imageSrc, float* feature);
-
-private:
-  torch::jit::script::Module mmodel;
+	DetectorDriver m_detector;
+	MarkerDriver m_marker;
+	FeatureDriver m_featuror;
 };
+
+DetectorDriver LoadDetectorDriver(const config_t& config);
+MarkerDriver LoadMarkerDriver(const config_t& config);
+FeatureDriver LoadFeatureDriver(const config_t& config);
+
+void ReleaseDetectorDriver(DetectorDriver driver);
+void ReleaseMarkerDriver(MarkerDriver driver);
+void ReleaseFeatureDriver(FeatureDriver driver);
+
+
+
 
