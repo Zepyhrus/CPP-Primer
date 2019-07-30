@@ -18,11 +18,11 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../src"
-  "/home/sherk/Workspace/pytorch/torch/include"
-  "/home/sherk/Workspace/pytorch/torch/include/torch/csrc/api/include"
   "../answers"
   "../include"
   "../third_party"
+  "/home/sherk/Workspace/pytorch/torch/include"
+  "/home/sherk/Workspace/pytorch/torch/include/torch/csrc/api/include"
   "/usr/local/cuda/include"
   )
 
