@@ -6,11 +6,5 @@
 
 #IncludeRegexTransform: 
 
-/home/sherk/Workspace/CPP/CPP-Primer/src/main.cpp
-stdlib.h
--
-stdio.h
--
-interface.h
-/home/sherk/Workspace/CPP/CPP-Primer/src/interface.h
+/home/sherk/Workspace/CPP/CPP-Primer/src/chapter_1/e1_2.cpp
 

@@ -57,27 +57,27 @@ include src/CMakeFiles/run.dir/progress.make
 # Include the compile flags for this target's objects.
 include src/CMakeFiles/run.dir/flags.make
 
-src/CMakeFiles/run.dir/main.cpp.o: src/CMakeFiles/run.dir/flags.make
-src/CMakeFiles/run.dir/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sherk/Workspace/CPP/CPP-Primer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/run.dir/main.cpp.o"
-	cd /home/sherk/Workspace/CPP/CPP-Primer/build/src && /usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/run.dir/main.cpp.o -c /home/sherk/Workspace/CPP/CPP-Primer/src/main.cpp
+src/CMakeFiles/run.dir/chapter_1/e1_2.cpp.o: src/CMakeFiles/run.dir/flags.make
+src/CMakeFiles/run.dir/chapter_1/e1_2.cpp.o: ../src/chapter_1/e1_2.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sherk/Workspace/CPP/CPP-Primer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/run.dir/chapter_1/e1_2.cpp.o"
+	cd /home/sherk/Workspace/CPP/CPP-Primer/build/src && /usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/run.dir/chapter_1/e1_2.cpp.o -c /home/sherk/Workspace/CPP/CPP-Primer/src/chapter_1/e1_2.cpp
 
-src/CMakeFiles/run.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/run.dir/main.cpp.i"
-	cd /home/sherk/Workspace/CPP/CPP-Primer/build/src && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sherk/Workspace/CPP/CPP-Primer/src/main.cpp > CMakeFiles/run.dir/main.cpp.i
+src/CMakeFiles/run.dir/chapter_1/e1_2.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/run.dir/chapter_1/e1_2.cpp.i"
+	cd /home/sherk/Workspace/CPP/CPP-Primer/build/src && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sherk/Workspace/CPP/CPP-Primer/src/chapter_1/e1_2.cpp > CMakeFiles/run.dir/chapter_1/e1_2.cpp.i
 
-src/CMakeFiles/run.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/run.dir/main.cpp.s"
-	cd /home/sherk/Workspace/CPP/CPP-Primer/build/src && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sherk/Workspace/CPP/CPP-Primer/src/main.cpp -o CMakeFiles/run.dir/main.cpp.s
+src/CMakeFiles/run.dir/chapter_1/e1_2.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/run.dir/chapter_1/e1_2.cpp.s"
+	cd /home/sherk/Workspace/CPP/CPP-Primer/build/src && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sherk/Workspace/CPP/CPP-Primer/src/chapter_1/e1_2.cpp -o CMakeFiles/run.dir/chapter_1/e1_2.cpp.s
 
 # Object files for target run
 run_OBJECTS = \
-"CMakeFiles/run.dir/main.cpp.o"
+"CMakeFiles/run.dir/chapter_1/e1_2.cpp.o"
 
 # External object files for target run
 run_EXTERNAL_OBJECTS =
 
-../bin/run: src/CMakeFiles/run.dir/main.cpp.o
+../bin/run: src/CMakeFiles/run.dir/chapter_1/e1_2.cpp.o
 ../bin/run: src/CMakeFiles/run.dir/build.make
 ../bin/run: /home/sherk/Workspace/pytorch/torch/lib/libtorch.so
 ../bin/run: /home/sherk/Workspace/pytorch/torch/lib/libc10.so

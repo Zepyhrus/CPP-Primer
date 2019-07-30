@@ -125,32 +125,32 @@ run/fast:
 	cd /home/sherk/Workspace/CPP/CPP-Primer/build && $(MAKE) -f src/CMakeFiles/run.dir/build.make src/CMakeFiles/run.dir/build
 .PHONY : run/fast
 
-main.o: main.cpp.o
+chapter_1/e1_2.o: chapter_1/e1_2.cpp.o
 
-.PHONY : main.o
+.PHONY : chapter_1/e1_2.o
 
 # target to build an object file
-main.cpp.o:
-	cd /home/sherk/Workspace/CPP/CPP-Primer/build && $(MAKE) -f src/CMakeFiles/run.dir/build.make src/CMakeFiles/run.dir/main.cpp.o
-.PHONY : main.cpp.o
+chapter_1/e1_2.cpp.o:
+	cd /home/sherk/Workspace/CPP/CPP-Primer/build && $(MAKE) -f src/CMakeFiles/run.dir/build.make src/CMakeFiles/run.dir/chapter_1/e1_2.cpp.o
+.PHONY : chapter_1/e1_2.cpp.o
 
-main.i: main.cpp.i
+chapter_1/e1_2.i: chapter_1/e1_2.cpp.i
 
-.PHONY : main.i
+.PHONY : chapter_1/e1_2.i
 
 # target to preprocess a source file
-main.cpp.i:
-	cd /home/sherk/Workspace/CPP/CPP-Primer/build && $(MAKE) -f src/CMakeFiles/run.dir/build.make src/CMakeFiles/run.dir/main.cpp.i
-.PHONY : main.cpp.i
+chapter_1/e1_2.cpp.i:
+	cd /home/sherk/Workspace/CPP/CPP-Primer/build && $(MAKE) -f src/CMakeFiles/run.dir/build.make src/CMakeFiles/run.dir/chapter_1/e1_2.cpp.i
+.PHONY : chapter_1/e1_2.cpp.i
 
-main.s: main.cpp.s
+chapter_1/e1_2.s: chapter_1/e1_2.cpp.s
 
-.PHONY : main.s
+.PHONY : chapter_1/e1_2.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	cd /home/sherk/Workspace/CPP/CPP-Primer/build && $(MAKE) -f src/CMakeFiles/run.dir/build.make src/CMakeFiles/run.dir/main.cpp.s
-.PHONY : main.cpp.s
+chapter_1/e1_2.cpp.s:
+	cd /home/sherk/Workspace/CPP/CPP-Primer/build && $(MAKE) -f src/CMakeFiles/run.dir/build.make src/CMakeFiles/run.dir/chapter_1/e1_2.cpp.s
+.PHONY : chapter_1/e1_2.cpp.s
 
 # Help Target
 help:
@@ -161,9 +161,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... run"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... chapter_1/e1_2.o"
+	@echo "... chapter_1/e1_2.i"
+	@echo "... chapter_1/e1_2.s"
 .PHONY : help
 
 

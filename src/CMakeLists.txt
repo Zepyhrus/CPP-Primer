@@ -25,7 +25,7 @@ include_directories(${PROJECT_SOURCE_DIR}/third_party)
 link_directories(${PROJECT_SOURCE_DIR}/lib)
 
 
-add_executable(run main.cpp)
+add_executable(run chapter_1/e1_2.cpp)
 
 
 set(OPENCV_LIBS opencv_core opencv_imgproc opencv_imgcodecs opencv_videoio opencv_highgui)
