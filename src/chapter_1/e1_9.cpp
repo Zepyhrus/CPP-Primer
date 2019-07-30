@@ -11,8 +11,8 @@ int main(int argc, char** argv)
     i++;
   }
 
-  printf("The result is %d\n", sum);
-  printf("The real result is %d\n", 150 * 51 / 2);
+  printf("The result is %d", sum);
+  printf("The real result is %d", 150 * 51 / 2);
   
   
   return 0;

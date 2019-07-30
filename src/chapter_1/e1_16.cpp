@@ -9,6 +9,6 @@ int main() {
     sum += value;
   }
 
-  std::cout << "The sum is:" << sum;
+  std::cout << "The sum is:" << sum << std::endl;
   
 }

@@ -111,46 +111,46 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-src/CMakeFiles/run.dir/rule:
-	cd /home/sherk/Workspace/CPP/CPP-Primer/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/run.dir/rule
-.PHONY : src/CMakeFiles/run.dir/rule
+src/CMakeFiles/test_cppp.dir/rule:
+	cd /home/sherk/Workspace/CPP/CPP-Primer/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/test_cppp.dir/rule
+.PHONY : src/CMakeFiles/test_cppp.dir/rule
 
 # Convenience name for target.
-run: src/CMakeFiles/run.dir/rule
+test_cppp: src/CMakeFiles/test_cppp.dir/rule
 
-.PHONY : run
+.PHONY : test_cppp
 
 # fast build rule for target.
-run/fast:
-	cd /home/sherk/Workspace/CPP/CPP-Primer/build && $(MAKE) -f src/CMakeFiles/run.dir/build.make src/CMakeFiles/run.dir/build
-.PHONY : run/fast
+test_cppp/fast:
+	cd /home/sherk/Workspace/CPP/CPP-Primer/build && $(MAKE) -f src/CMakeFiles/test_cppp.dir/build.make src/CMakeFiles/test_cppp.dir/build
+.PHONY : test_cppp/fast
 
-chapter_1/e1_2.o: chapter_1/e1_2.cpp.o
+chapter_1/e1_22.o: chapter_1/e1_22.cpp.o
 
-.PHONY : chapter_1/e1_2.o
+.PHONY : chapter_1/e1_22.o
 
 # target to build an object file
-chapter_1/e1_2.cpp.o:
-	cd /home/sherk/Workspace/CPP/CPP-Primer/build && $(MAKE) -f src/CMakeFiles/run.dir/build.make src/CMakeFiles/run.dir/chapter_1/e1_2.cpp.o
-.PHONY : chapter_1/e1_2.cpp.o
+chapter_1/e1_22.cpp.o:
+	cd /home/sherk/Workspace/CPP/CPP-Primer/build && $(MAKE) -f src/CMakeFiles/test_cppp.dir/build.make src/CMakeFiles/test_cppp.dir/chapter_1/e1_22.cpp.o
+.PHONY : chapter_1/e1_22.cpp.o
 
-chapter_1/e1_2.i: chapter_1/e1_2.cpp.i
+chapter_1/e1_22.i: chapter_1/e1_22.cpp.i
 
-.PHONY : chapter_1/e1_2.i
+.PHONY : chapter_1/e1_22.i
 
 # target to preprocess a source file
-chapter_1/e1_2.cpp.i:
-	cd /home/sherk/Workspace/CPP/CPP-Primer/build && $(MAKE) -f src/CMakeFiles/run.dir/build.make src/CMakeFiles/run.dir/chapter_1/e1_2.cpp.i
-.PHONY : chapter_1/e1_2.cpp.i
+chapter_1/e1_22.cpp.i:
+	cd /home/sherk/Workspace/CPP/CPP-Primer/build && $(MAKE) -f src/CMakeFiles/test_cppp.dir/build.make src/CMakeFiles/test_cppp.dir/chapter_1/e1_22.cpp.i
+.PHONY : chapter_1/e1_22.cpp.i
 
-chapter_1/e1_2.s: chapter_1/e1_2.cpp.s
+chapter_1/e1_22.s: chapter_1/e1_22.cpp.s
 
-.PHONY : chapter_1/e1_2.s
+.PHONY : chapter_1/e1_22.s
 
 # target to generate assembly for a file
-chapter_1/e1_2.cpp.s:
-	cd /home/sherk/Workspace/CPP/CPP-Primer/build && $(MAKE) -f src/CMakeFiles/run.dir/build.make src/CMakeFiles/run.dir/chapter_1/e1_2.cpp.s
-.PHONY : chapter_1/e1_2.cpp.s
+chapter_1/e1_22.cpp.s:
+	cd /home/sherk/Workspace/CPP/CPP-Primer/build && $(MAKE) -f src/CMakeFiles/test_cppp.dir/build.make src/CMakeFiles/test_cppp.dir/chapter_1/e1_22.cpp.s
+.PHONY : chapter_1/e1_22.cpp.s
 
 # Help Target
 help:
@@ -159,11 +159,11 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
+	@echo "... test_cppp"
 	@echo "... edit_cache"
-	@echo "... run"
-	@echo "... chapter_1/e1_2.o"
-	@echo "... chapter_1/e1_2.i"
-	@echo "... chapter_1/e1_2.s"
+	@echo "... chapter_1/e1_22.o"
+	@echo "... chapter_1/e1_22.i"
+	@echo "... chapter_1/e1_22.s"
 .PHONY : help
 
 

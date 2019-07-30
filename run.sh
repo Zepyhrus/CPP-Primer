@@ -1,2 +1,2 @@
 
-./bin/run
+./bin/test_cppp

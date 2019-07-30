@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named run
+# Target rules for targets named test_cppp
 
 # Build rule for target.
-run: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 run
-.PHONY : run
+test_cppp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_cppp
+.PHONY : test_cppp
 
 # fast build rule for target.
-run/fast:
-	$(MAKE) -f src/CMakeFiles/run.dir/build.make src/CMakeFiles/run.dir/build
-.PHONY : run/fast
+test_cppp/fast:
+	$(MAKE) -f src/CMakeFiles/test_cppp.dir/build.make src/CMakeFiles/test_cppp.dir/build
+.PHONY : test_cppp/fast
 
 # Help Target
 help:
@@ -131,7 +131,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... run"
+	@echo "... test_cppp"
 .PHONY : help
 
 

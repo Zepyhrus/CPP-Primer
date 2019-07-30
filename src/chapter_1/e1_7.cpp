@@ -3,6 +3,8 @@
 
 int main(int argc, char** argv)
 {
+  /* below is wrong nested comments */
+  // /* This is a wrong nested comment*/    */ 
   std::cout << "Enter two numbers:" << std::endl;
 
   int v1 = 0, v2 = 0;
