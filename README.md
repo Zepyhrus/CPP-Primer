@@ -254,6 +254,87 @@ Any nonzero pointer evalutaes as `true`. Two pointers are equal if they hold the
 **`void*` Pointers**
 The type `void*` is a special pointer type that can hold the address of any object, it holds an address but the type of the object at that address is unknown. Generally, a `void*` pointer is used to dieal with memory as memory, rather than using the pointer to access the object stored in that memory.
 
+### 2.3.3 Understanding Compound Type Declarations
+
+**Defining Multiple Variable**: It could be really confusing, put whitespace between the type modifier and the name being declared. Use **First Style** to declare variables.
+
+```c
+int* p1, p2;  //  p1 is a pointer to int; p2 is an int
+```
+
+**Pointer to Pointers**: We indicate each pointer level by its own \*. \*\* for a pointer to a pointer, \*\*\* for a pointer to a pointer to a pointer.
+
+```c
+int ival = 1024;
+int * pi = &ival;   //  pi points to an int
+int **ppi = &pi;    //  ppi points to a pointer points to an int
+
+cout << "The value of ival\n"
+     << "direct value: " << ival << "\n"
+     << "indirect value: " << *pi << "\n"
+     << "doubly indirect value: " << **ppi  // deference twice
+     << endl;
+```
+
+**Reference to Pointers**: A reference is not an object. Hence we may not have a pointer to a reference. But we can define a reference to a pointer.
+
+```c
+int val = 42;
+int *pi;
+int *&r = pi; //  r is a reference to pi
+r = &val; // r is a reference, assign to r equals to assigning to pi
+*r = 0; //  dereference r yields i, this is assigning i to be 0
+```
+
+**Notes**: As illustrate above, you can use `**pi` to indicate a pointer pointing to a pointer, but you can't use `&&p` to indicate a reference refering to a reference, cause reference is not a project.
+
+## `const` Qualifier
+
+Since wo can't change the value of `const`, it must be initialized.
+
+**By Default, `const` Objects Are Local to a File**: When a `const` object is initialized from a compile-time constant, the compiler will usually repalce uses of the varibale with its corresponding value during compilation. When we define a `const` with the same name in multiple files, it is as if we had written definitions for separate variables in each file. If a single instance of a `const` variable, we use the keyword `extern` on both its definition and declaration(s).
+
+e.g., if you what to share `const` accross different files, you must define the varibale as `extern`.
+
+### 2.4.1 Reference to `const`
+
+A reference to `const` cannot be used to change the object to which the reference is bound.
+**TERMINOLOGY**: `const` Reference is a reference to `const`.
+
+**Initialization and References to `const`**: One of the 2 exceptions to the rule that the type of a reference must match the type  of the object to which it refers: we can initialize a reference to `const` from any expression that can be converted to the type of the reference.
+
+```c
+int i = 42;
+const int &r1 = i;        //  we can bind a const int& to a plain
+const int &r2 = 42;       //  ok: r1 is a reference to const
+const int &r3 = r1 * 2;   //  ok: r3 is a reference to const
+int &r4 = r1 * 2;         //  error: r4 is a nonconst reference
+```
+
+**Important: AReference to `const` May Refer to an Object That is Not `const`**:
+
+```c
+int i = 42;
+int &r1 = i;        //  r1 bound to i
+const int &r2 = i;  //  r2 also bound to i; but connot be used to change i;
+r1 = 0;             //  r1 is not const; i is now 0
+r2 = 0;             //  error: r2 is a reference to const
+```
+
+### 2.4.2 Pointers and `const`
+
+Like a reference to `cost`, a pointer to const may not be used to change the object to which the pointer points.
+**Important**: There is no guarantee that an object pointed to by a pointer to `const` won't change.
+
+**`const` Pointers**: We indicate that the pointer is `const` by putting the `const` after \*.
+
+```c
+int errNumb = 0;
+int *const curErr = &errNumb;     //  curErr will always point to errNumb
+const double pi = 3.14159;
+const double *const pip = &pi;    //  pip is a const pointer to a const object
+```
+
 ## Acknowledgmets
 
 * With all respect to Mr. Zeng Xianliang, my colleague, who introduced this stunning book to me which he himself never really read it thoughly;

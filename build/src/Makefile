@@ -125,32 +125,32 @@ test_cppp/fast:
 	cd /home/sherk/Workspace/CPP/CPP-Primer/build && $(MAKE) -f src/CMakeFiles/test_cppp.dir/build.make src/CMakeFiles/test_cppp.dir/build
 .PHONY : test_cppp/fast
 
-chapter_2/e2_18.o: chapter_2/e2_18.cpp.o
+chapter_2/e2_27.o: chapter_2/e2_27.cpp.o
 
-.PHONY : chapter_2/e2_18.o
+.PHONY : chapter_2/e2_27.o
 
 # target to build an object file
-chapter_2/e2_18.cpp.o:
-	cd /home/sherk/Workspace/CPP/CPP-Primer/build && $(MAKE) -f src/CMakeFiles/test_cppp.dir/build.make src/CMakeFiles/test_cppp.dir/chapter_2/e2_18.cpp.o
-.PHONY : chapter_2/e2_18.cpp.o
+chapter_2/e2_27.cpp.o:
+	cd /home/sherk/Workspace/CPP/CPP-Primer/build && $(MAKE) -f src/CMakeFiles/test_cppp.dir/build.make src/CMakeFiles/test_cppp.dir/chapter_2/e2_27.cpp.o
+.PHONY : chapter_2/e2_27.cpp.o
 
-chapter_2/e2_18.i: chapter_2/e2_18.cpp.i
+chapter_2/e2_27.i: chapter_2/e2_27.cpp.i
 
-.PHONY : chapter_2/e2_18.i
+.PHONY : chapter_2/e2_27.i
 
 # target to preprocess a source file
-chapter_2/e2_18.cpp.i:
-	cd /home/sherk/Workspace/CPP/CPP-Primer/build && $(MAKE) -f src/CMakeFiles/test_cppp.dir/build.make src/CMakeFiles/test_cppp.dir/chapter_2/e2_18.cpp.i
-.PHONY : chapter_2/e2_18.cpp.i
+chapter_2/e2_27.cpp.i:
+	cd /home/sherk/Workspace/CPP/CPP-Primer/build && $(MAKE) -f src/CMakeFiles/test_cppp.dir/build.make src/CMakeFiles/test_cppp.dir/chapter_2/e2_27.cpp.i
+.PHONY : chapter_2/e2_27.cpp.i
 
-chapter_2/e2_18.s: chapter_2/e2_18.cpp.s
+chapter_2/e2_27.s: chapter_2/e2_27.cpp.s
 
-.PHONY : chapter_2/e2_18.s
+.PHONY : chapter_2/e2_27.s
 
 # target to generate assembly for a file
-chapter_2/e2_18.cpp.s:
-	cd /home/sherk/Workspace/CPP/CPP-Primer/build && $(MAKE) -f src/CMakeFiles/test_cppp.dir/build.make src/CMakeFiles/test_cppp.dir/chapter_2/e2_18.cpp.s
-.PHONY : chapter_2/e2_18.cpp.s
+chapter_2/e2_27.cpp.s:
+	cd /home/sherk/Workspace/CPP/CPP-Primer/build && $(MAKE) -f src/CMakeFiles/test_cppp.dir/build.make src/CMakeFiles/test_cppp.dir/chapter_2/e2_27.cpp.s
+.PHONY : chapter_2/e2_27.cpp.s
 
 # Help Target
 help:
@@ -161,9 +161,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test_cppp"
 	@echo "... edit_cache"
-	@echo "... chapter_2/e2_18.o"
-	@echo "... chapter_2/e2_18.i"
-	@echo "... chapter_2/e2_18.s"
+	@echo "... chapter_2/e2_27.o"
+	@echo "... chapter_2/e2_27.i"
+	@echo "... chapter_2/e2_27.s"
 .PHONY : help
 
 
