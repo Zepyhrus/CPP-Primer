@@ -335,6 +335,58 @@ const double pi = 3.14159;
 const double *const pip = &pi;    //  pip is a const pointer to a const object
 ```
 
+### 2.4.3 Top-level `const`
+
+The term **top-level const** to indicate that the pointer itself is a const. When a pointer can point to a const object, we refer to that const as a low-level const.
+
+### 2.4.4 `constexpr` and Constant Expressions
+
+A **constant expression** is an expression whose value cannot change tnd that can be evalutaed at compile time.
+
+```c
+const int max_files = 20;         //  this is const expression
+const int limit = max_files + 1;  //  this is const expression
+int staff_size = 27;        //  not a constant expression
+cnost int sz = get_size();  //  not a constant because it is not known util run time
+```
+
+**C++ 11**: Under new standard, we can aske the compiler to verify that a varibale is a constant expression by declaring the varibale in a `constexpr` declaration. Also a function simple enough to be evaluate at compile time could also be used as `constexpr`.
+
+**Literal Types**: The types that we can use in a `constexpr` are known as "literal types" because they are simple enough to have literal values.
+
+**Pointers and `constexpr`**: When we define a pointer in a `constexpr` declaration, the `constexpr` specifier applies to the pointer, not the type to which the pointer points.
+
+## 2.5 Dealing with Types
+
+### 2.5.1 Type Aliases
+
+A type alias is a name that is a synonym for another type, whichi simplyfing complicated type definitions, making those types easier to use.
+
+```c
+typedef double wages;
+typedef wages base, *p;
+```
+
+The new standard introduced a second way to define a type alias, via an alias declaration:
+
+```c
+using SI = Sales_item;
+```
+
+**Pointers, `const`, nad Type Aliases**:
+
+```c
+typedef char *pstring;
+const pstring cstr = 0;
+const char *cstr = 0;   //  this is illegal
+```
+
+### 2.5.2 The `auto` Type Specifier
+
+```c
+auto item = val1 + val2;
+```
+
 ## Acknowledgmets
 
 * With all respect to Mr. Zeng Xianliang, my colleague, who introduced this stunning book to me which he himself never really read it thoughly;
