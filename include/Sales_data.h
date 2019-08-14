@@ -1,5 +1,7 @@
+#ifndef SALES_DATA_H
+#define SALES_DATA_H
+
 #include <string>
-#include <iostream>
 
 struct Sales_data {
   std::string bookNo;
@@ -8,3 +10,4 @@ struct Sales_data {
 };
 
 
+#endif

@@ -407,6 +407,24 @@ struct Sales_data {
 
 ### 2.6.3 Wrinting Our Own Header Files
 
+A header might be included more than twice, we need to write our headers in a way that is safe even if the header is included multiple time.
+
+**Note**: Whenever a header is updated, the source files that use that header must be recompiled to get the new or changed declarations.
+
+**A Brief Introduction to the Preprocessor**: The most common technique for making it safe to include a header multiple times relies on the **preprocessor**, which inherts from C is a progrom that runs before the compiler and changes the source text of our programs. `#include` is a processor.
+
+**WARNING**: Preprocessor variable names do not respect C++ scoping rules.
+
+**Note**: What is **Header guards** ?
+
+```c
+/* header guards for sales data */
+#ifndef SALES_DATA_H
+#define SALES_DATA_H
+
+#endif  SALES_DATA_H
+```
+
 ## Acknowledgmets
 
 * With all respect to Mr. Zeng Xianliang, my colleague, who introduced this stunning book to me which he himself never really read it thoughly;
