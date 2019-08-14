@@ -387,6 +387,9 @@ const char *cstr = 0;   //  this is illegal
 auto item = val1 + val2;
 ```
 
+## 2.6 Deifining Our Own Data Structures
+
+
 ## Acknowledgmets
 
 * With all respect to Mr. Zeng Xianliang, my colleague, who introduced this stunning book to me which he himself never really read it thoughly;
