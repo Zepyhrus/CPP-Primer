@@ -389,6 +389,23 @@ auto item = val1 + val2;
 
 ## 2.6 Deifining Our Own Data Structures
 
+### 2.6.1 Defining the Sales_data Type
+
+The close curly that ends the class body must be fgollowed by a semicolon, so we can define varibales after the class body:
+
+```c
+struct Sales_data {
+  std::string bookNo;
+  unsigned units_sold = 0;
+  double revenue = 0.0;
+} accum, trans, *salesptr;
+```
+
+**Class Data Members**: A type of members in a struct.
+
+### 2.6.2 Using the Sales_data Class
+
+### 2.6.3 Wrinting Our Own Header Files
 
 ## Acknowledgmets
 
