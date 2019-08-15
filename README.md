@@ -36,7 +36,7 @@ int c = a++;  // a + 1 after assigned to c, cal before a + 1;
 
 * Uninitialized variables are a rich source of bugs;
 
-## Chapter 2 Varibales and Basic Types
+# Chapter 2 Varibales and Basic Types
 
 Some languages, such as Smalltalk and Python, check types at run time. In contrast, C++ is a statically typed language: type checking is done at compile time.
 As a consequence, the compiler must know the type of every name used in the program.
@@ -424,6 +424,16 @@ A header might be included more than twice, we need to write our headers in a wa
 
 #endif  SALES_DATA_H
 ```
+
+# 3. Strings, Vectors, And Arrays
+
+The standard library defines a number of additiaonal types of a higher-level nature that computer hardware usually does not implement directly.
+
+## 3.1 Namespace using Declarations
+
+**Headers Should Not Include `using` Declarations**: The contents of a header are copied into the including program's text. If a header has a `using` declaration, then it will pollute all scope with such `using` statement.
+
+## 3.2 Library `string`
 
 ## Acknowledgmets
 
