@@ -435,6 +435,45 @@ The standard library defines a number of additiaonal types of a higher-level nat
 
 ## 3.2 Library `string`
 
+### 3.2.1 Defining and Initializeing `strings`
+
+```c
+string s4(10, 'c'); //  s4 is cccccccccc
+```
+
+**Direct and Copy Forms of Initialization**:
+```c
+string s5 = "hiya"; //  copy initialization
+string s6("hiya");  //  direct initialization
+string s7(10, 'c'); //  direct initialization
+```
+
+#### 3.2.2 Operations on `string`s
+
+**Table: String Operations**: On page. 86.
+```c
+getline(is, s); //  Reads a line of input from is into s, returns is.
+s.empty();      //
+s.size();       //  Returns the number of characters in s
+s[n];           //  returns a reference to the char at position n in s.
+s1 + s2;        //
+s1 = s2;        //
+s1 == s2;       //
+<, <=, >, >=;   //  Comparisions are case-sensitive and use dictionary ordering
+```
+
+**Using `getline` to Read an Entire Line**: if you want to take the input and keep the whitespace in input:
+```c
+int main()
+{
+  string line;
+  while (getline(cin, line))
+    cout << line << endl; //  we need endl to end the current line and flush the buffer
+  return 0;
+}
+```
+
+
 ## Acknowledgmets
 
 * With all respect to Mr. Zeng Xianliang, my colleague, who introduced this stunning book to me which he himself never really read it thoughly;
