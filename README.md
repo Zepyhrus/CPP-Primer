@@ -473,9 +473,94 @@ int main()
 }
 ```
 
+**The string::size_type Type**: `string::size_type` returns a size_type value. If n ins an int that holds a negative value, then s.size() < n will almost surely evaluate as true. It yields true because the negative value in n will convert to a large unsigned value.
+
+**Adding Literals and strings**: When we mix strings and string or character literals, at least one operand to each + operator must be of string type.
+
+```c
+string s5 = "hello" + ", ";   //  error: no string operand
+string s7 = "hello" + ", " + s2;    //  error: can't add string literals
+```
+
+### 3.2.3 Dealing with the Characters in a string
+
+**Advice**: Use the C++ version of C Library Headers. Headers in C have names of the form name.h. The C++ version of these headers are named cname--they remove the .h suffix and precede the name with the letterc. The c indicates that the header is part of the C library.
+`cctype` has the same contents as `ctype.h`, but in a form that is approprate for C++ programs. In particular, the names defined in the `cname` headers are defined inside the `std` namespace, whereas those defined in the .h versions are not.
+
+**Note**:
+* `string.h` contains old functions like `strcpy`, `strlen` for C style null-terminated strings, use `cstring` instead.
+* `string` primarily contains the `std::string`, `std::wstring` and other classes.
+
+**Use Range-Based for to process every Character**: Introduced in C++ 11, while the `expression` should represent a sequence.
+```cpp
+for (declaration : expression)
+  statement
+
+string str("some string");
+
+// fprint the characters in str one character to a line
+for (auto c : str)
+  cout << c << endl;
+```
+
+Example code:
+```cpp
+string s("Hello world!!!");
+// punct_cunt has the same type that s.size returns;
+decltype(s.size()) punct_cnt = 0;
+
+// count the number of punctutation characters in s
+for (auto c : s)
+  if (ispunct(c))
+    ++punct_cnt;
+
+cout << punct_cnt
+  << " punctiuation characters in " << s << endl;
+
+for (auto &c :s)
+  if (isalpha(c))
+    c = toupper(c);
+
+cout << s << endl;
+/* cctype Functions
+  * isalnum(c): true if c is a letter or a digit
+  * isalpha(c): true if c is a letter
+  * iscntrl(c): true if c is a control character
+  * isdigit(c): true if c is a digit
+  * isgraph(c): true if c is not a space but is printable
+  * islower(c): true if c is a lowercase letter
+  * isprint(c): true if c is a printable character (i.e., a space or a character that has a visible representation)
+  * ispunct(c): true if c is a punctutation charcter
+  * isspace(c): true if c is a space
+  * isupper(c): true if c is an uppercase letter
+  * isxdigit(c): true if c is a hexadecimal digit
+  * tolower(c): convert c to its lowercase equivalent if c is a letter
+  * toupper(c): convert c to its uppercase equivalent if c is a letter
+  */
+```
+
+**Process Only Some Characters**: We can use a subscript or an iterator. Note that the subscript will be converted to unsigned int.
+
+**Using a Subscript for Random Access**:
+```cpp
+const string hexdigits = "0123456789ABCDEF";
+
+cout << "Enter a series of numbers between 0 and 15"
+      << " separated by spaces. Hit ENDTER when finished: "
+      << endl;
+
+string result;
+
+string::size_type n;
+while (cin >> n)
+  if (n < hexdigits.size())
+    result += hexdigits[n];
+
+cout << "Your hex number is: " << result << endl;
+```
 
 ## Acknowledgmets
 
-* With all respect to Mr. Zeng Xianliang, my colleague, who introduced this stunning book to me which he himself never really read it thoughly;
+* With all respect to Mr. Zeng Xianliang, my colleague, who introduced this stunning book to me which he himself never really read it;
 * Full respect to the author of the book: Cpp Primer, Stanley B. Lippman, Josee Lajoie, Barbara E. Moo. Their great works perserves;
 * Didn't came up who else is helping me with it at current stage.
