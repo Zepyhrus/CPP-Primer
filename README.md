@@ -559,6 +559,35 @@ while (cin >> n)
 cout << "Your hex number is: " << result << endl;
 ```
 
+## 3.3 Library vector Type
+
+A vector is a class template. C++ has both class and function templates.The process that the compiler uses to create classees or functions from templates is called **Instantiation**. 
+**Note**: vector is a template, not a type. Types generated from vector must include the element type, for example, `vector<int>`. Some compilers may require the old-style declarations for a vector of vectors, for example, `vector<vector<int> >`.
+
+### 3.3.1 Deifining and Initializing vectors
+
+```cpp
+vector<T> v1;                   //  vector that holds objects of type T. Default initialization; v1 is empty
+vector<T> v2(v1);               //  v2 has a copy of each element in v1.
+vector<T> v2 = v1;              //  Equivalent to v2(v1)
+vector<T> v3(n, val);           //  v3 has n elements with value val.
+vector<T> v4(n);                //  v4 has n copipes of a value-initialized object
+vector<T> v5{a, b, c, ...};     //  v5 has as manay elements as there are initializers; elements are initialized by corresponding initializers
+vector<T> v5 = {a, b, c, ...};  //  Equivalent to v5{a, b, c, ...}
+```
+
+**Key Concept**: vectors grow efficiently: If differing element values are needed, it is usually more efficient to define an empty vector and add elements as the values we need become known at run time. Moreover, vector offers capabilityes to allow us to further enhance run-time performance when we add elements. Deifne a vector of a specific size could result in poorer performance.
+
+**Warning**: The body of a range `for` must not change the size of the sequence over which it is iterating.
+
+### 3.3.2 Other vector Operations
+
+**Warning**: *buffer overflow* errors are the result of subscripting elements that don`t exst. Such bugs are the most common cause of security problems in PC and other applications.
+
+## 3.4 Introducing Iterators
+
+All of the library containers have iterators, but only a few of them support the subscript operator. `string` is not a container, but it supports most of the container operations, `string` also supports iterators.
+
 ## Acknowledgmets
 
 * With all respect to Mr. Zeng Xianliang, my colleague, who introduced this stunning book to me which he himself never really read it;
