@@ -1,1 +1,1 @@
-/home/ubuntu/Workspace/BLOG/source/_posts/CPP-Primer-Chapter-2-Varibales-and-Basic-Types
+/home/ubuntu/Workspace/BLOG/source/_posts/CPP-Primer-Chapter-2-Varibales-and-Basic-Types.md
