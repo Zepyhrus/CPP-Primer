@@ -1,9 +1,3 @@
----
-title: CPP-Primer-Notes
-date: 2019-07-23 10:05:28
-tags:
----
-
 # Cpp Primer Notes
 
 ## Exercise
