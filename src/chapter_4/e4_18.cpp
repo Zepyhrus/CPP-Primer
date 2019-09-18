@@ -14,10 +14,11 @@ int main()
   string iv = "Here we go!";
   auto beg = iv.begin();
 
-  while (beg != iv.end() && !isspace(*beg))
-    *beg = toupper(*beg++);
-  
-  cout << iv << endl;
+  auto pbeg = iv.begin();
+
+  while (pbeg != iv.end() && *beg >= 0)
+    cout << *(++pbeg) << endl;
+  /* this will print without H and another empty char at the end */
   
   /* the prefix increment (or decrement) current value and return the changed value
    * the postfix return the value at current stage and then increment (or decrement)
