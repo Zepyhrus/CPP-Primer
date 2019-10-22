@@ -10,7 +10,7 @@ int main(int argc, char **argv)
 
   cout << x << " " << y << endl;
 
-  (x < y) ? (++x, ++y) : (--x, --y);
+  x < y ? ++x, ++y : --x, --y;
 
   cout << x << " " << y << endl;
 }
