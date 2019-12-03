@@ -5,6 +5,9 @@
 using namespace std;
 
 int main(int argc, char** argv) {
+  /* Includes exercise 5.17
+   */
+
   vector<int> vecA = {0, 1, 1, 2};
   vector<int> vecB = {0, 1, 1, 2, 3, 5, 8};
   bool res = true;
