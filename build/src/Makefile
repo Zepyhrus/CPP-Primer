@@ -125,32 +125,32 @@ test_cppp/fast:
 	cd /home/ubuntu/Workspace/CPP-Primer/build && $(MAKE) -f src/CMakeFiles/test_cppp.dir/build.make src/CMakeFiles/test_cppp.dir/build
 .PHONY : test_cppp/fast
 
-chapter_5/e5.23.o: chapter_5/e5.23.cpp.o
+chapter_6/e6.1.1.o: chapter_6/e6.1.1.cpp.o
 
-.PHONY : chapter_5/e5.23.o
+.PHONY : chapter_6/e6.1.1.o
 
 # target to build an object file
-chapter_5/e5.23.cpp.o:
-	cd /home/ubuntu/Workspace/CPP-Primer/build && $(MAKE) -f src/CMakeFiles/test_cppp.dir/build.make src/CMakeFiles/test_cppp.dir/chapter_5/e5.23.cpp.o
-.PHONY : chapter_5/e5.23.cpp.o
+chapter_6/e6.1.1.cpp.o:
+	cd /home/ubuntu/Workspace/CPP-Primer/build && $(MAKE) -f src/CMakeFiles/test_cppp.dir/build.make src/CMakeFiles/test_cppp.dir/chapter_6/e6.1.1.cpp.o
+.PHONY : chapter_6/e6.1.1.cpp.o
 
-chapter_5/e5.23.i: chapter_5/e5.23.cpp.i
+chapter_6/e6.1.1.i: chapter_6/e6.1.1.cpp.i
 
-.PHONY : chapter_5/e5.23.i
+.PHONY : chapter_6/e6.1.1.i
 
 # target to preprocess a source file
-chapter_5/e5.23.cpp.i:
-	cd /home/ubuntu/Workspace/CPP-Primer/build && $(MAKE) -f src/CMakeFiles/test_cppp.dir/build.make src/CMakeFiles/test_cppp.dir/chapter_5/e5.23.cpp.i
-.PHONY : chapter_5/e5.23.cpp.i
+chapter_6/e6.1.1.cpp.i:
+	cd /home/ubuntu/Workspace/CPP-Primer/build && $(MAKE) -f src/CMakeFiles/test_cppp.dir/build.make src/CMakeFiles/test_cppp.dir/chapter_6/e6.1.1.cpp.i
+.PHONY : chapter_6/e6.1.1.cpp.i
 
-chapter_5/e5.23.s: chapter_5/e5.23.cpp.s
+chapter_6/e6.1.1.s: chapter_6/e6.1.1.cpp.s
 
-.PHONY : chapter_5/e5.23.s
+.PHONY : chapter_6/e6.1.1.s
 
 # target to generate assembly for a file
-chapter_5/e5.23.cpp.s:
-	cd /home/ubuntu/Workspace/CPP-Primer/build && $(MAKE) -f src/CMakeFiles/test_cppp.dir/build.make src/CMakeFiles/test_cppp.dir/chapter_5/e5.23.cpp.s
-.PHONY : chapter_5/e5.23.cpp.s
+chapter_6/e6.1.1.cpp.s:
+	cd /home/ubuntu/Workspace/CPP-Primer/build && $(MAKE) -f src/CMakeFiles/test_cppp.dir/build.make src/CMakeFiles/test_cppp.dir/chapter_6/e6.1.1.cpp.s
+.PHONY : chapter_6/e6.1.1.cpp.s
 
 # Help Target
 help:
@@ -161,9 +161,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test_cppp"
 	@echo "... edit_cache"
-	@echo "... chapter_5/e5.23.o"
-	@echo "... chapter_5/e5.23.i"
-	@echo "... chapter_5/e5.23.s"
+	@echo "... chapter_6/e6.1.1.o"
+	@echo "... chapter_6/e6.1.1.i"
+	@echo "... chapter_6/e6.1.1.s"
 .PHONY : help
 
 
