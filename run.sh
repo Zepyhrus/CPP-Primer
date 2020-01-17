@@ -1,2 +1,2 @@
 
-./bin/test_cppp
+./bin/test_cppp -i love -u babe
