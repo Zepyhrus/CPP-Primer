@@ -61,10 +61,11 @@ int main(int argc, char** argv) {
 
   print(k);
 
-  /* 6.24 */
+  /* 6.25 */
   cout << "6.24. " << endl;
   cout << "argc: " << argc << endl;
 
+  /* 6.26 */
   cout << "argv: ";
   for (int i = 0; i < argc; i++) {
     cout << argv[i] << ((i == argc-1) ? "\n" : "\t");
