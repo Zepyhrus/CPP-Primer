@@ -125,32 +125,32 @@ test_cppp/fast:
 	cd /home/ubuntu/Workspace/CPP-Primer/build && $(MAKE) -f src/CMakeFiles/test_cppp.dir/build.make src/CMakeFiles/test_cppp.dir/build
 .PHONY : test_cppp/fast
 
-chapter_6/e6.2.6.o: chapter_6/e6.2.6.cpp.o
+chapter_6/e6.3.3.o: chapter_6/e6.3.3.cpp.o
 
-.PHONY : chapter_6/e6.2.6.o
+.PHONY : chapter_6/e6.3.3.o
 
 # target to build an object file
-chapter_6/e6.2.6.cpp.o:
-	cd /home/ubuntu/Workspace/CPP-Primer/build && $(MAKE) -f src/CMakeFiles/test_cppp.dir/build.make src/CMakeFiles/test_cppp.dir/chapter_6/e6.2.6.cpp.o
-.PHONY : chapter_6/e6.2.6.cpp.o
+chapter_6/e6.3.3.cpp.o:
+	cd /home/ubuntu/Workspace/CPP-Primer/build && $(MAKE) -f src/CMakeFiles/test_cppp.dir/build.make src/CMakeFiles/test_cppp.dir/chapter_6/e6.3.3.cpp.o
+.PHONY : chapter_6/e6.3.3.cpp.o
 
-chapter_6/e6.2.6.i: chapter_6/e6.2.6.cpp.i
+chapter_6/e6.3.3.i: chapter_6/e6.3.3.cpp.i
 
-.PHONY : chapter_6/e6.2.6.i
+.PHONY : chapter_6/e6.3.3.i
 
 # target to preprocess a source file
-chapter_6/e6.2.6.cpp.i:
-	cd /home/ubuntu/Workspace/CPP-Primer/build && $(MAKE) -f src/CMakeFiles/test_cppp.dir/build.make src/CMakeFiles/test_cppp.dir/chapter_6/e6.2.6.cpp.i
-.PHONY : chapter_6/e6.2.6.cpp.i
+chapter_6/e6.3.3.cpp.i:
+	cd /home/ubuntu/Workspace/CPP-Primer/build && $(MAKE) -f src/CMakeFiles/test_cppp.dir/build.make src/CMakeFiles/test_cppp.dir/chapter_6/e6.3.3.cpp.i
+.PHONY : chapter_6/e6.3.3.cpp.i
 
-chapter_6/e6.2.6.s: chapter_6/e6.2.6.cpp.s
+chapter_6/e6.3.3.s: chapter_6/e6.3.3.cpp.s
 
-.PHONY : chapter_6/e6.2.6.s
+.PHONY : chapter_6/e6.3.3.s
 
 # target to generate assembly for a file
-chapter_6/e6.2.6.cpp.s:
-	cd /home/ubuntu/Workspace/CPP-Primer/build && $(MAKE) -f src/CMakeFiles/test_cppp.dir/build.make src/CMakeFiles/test_cppp.dir/chapter_6/e6.2.6.cpp.s
-.PHONY : chapter_6/e6.2.6.cpp.s
+chapter_6/e6.3.3.cpp.s:
+	cd /home/ubuntu/Workspace/CPP-Primer/build && $(MAKE) -f src/CMakeFiles/test_cppp.dir/build.make src/CMakeFiles/test_cppp.dir/chapter_6/e6.3.3.cpp.s
+.PHONY : chapter_6/e6.3.3.cpp.s
 
 # Help Target
 help:
@@ -161,9 +161,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test_cppp"
 	@echo "... edit_cache"
-	@echo "... chapter_6/e6.2.6.o"
-	@echo "... chapter_6/e6.2.6.i"
-	@echo "... chapter_6/e6.2.6.s"
+	@echo "... chapter_6/e6.3.3.o"
+	@echo "... chapter_6/e6.3.3.i"
+	@echo "... chapter_6/e6.3.3.s"
 .PHONY : help
 
 
