@@ -16,6 +16,17 @@ string &shorter_string(string &s1, string &s2) {
 
 }
 
+/* 6.39 (a) legal */
+int calc(int, int);
+int calc(const int, const int);
+
+/* 6.39 (b) illegal */
+int get();
+// double get();
+
+/* 6.39 (c) legal */
+int *reset(int *);
+double *reset(double *);
 
 int main(int argc, char** argv) {
   const string s1 = "I";
@@ -28,7 +39,6 @@ int main(int argc, char** argv) {
   s3 = "no problem";
 
   cout << s3 << endl;
-
 }
 
 
