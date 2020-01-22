@@ -1,1 +1,1 @@
-mkdir -p build && cd build && cmake .. && make -j && cd ..
+mkdir -p build && cd build && cmake -DCMAKE_BUILD_TYPE=Release .. && make -j && cd ..
