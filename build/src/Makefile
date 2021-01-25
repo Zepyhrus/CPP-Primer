@@ -125,32 +125,32 @@ test_cppp/fast:
 	cd /home/ubuntu/Workspace/CPP-Primer/build && $(MAKE) -f src/CMakeFiles/test_cppp.dir/build.make src/CMakeFiles/test_cppp.dir/build
 .PHONY : test_cppp/fast
 
-chapter_6/e6.7.o: chapter_6/e6.7.cpp.o
+playground/main.o: playground/main.c.o
 
-.PHONY : chapter_6/e6.7.o
+.PHONY : playground/main.o
 
 # target to build an object file
-chapter_6/e6.7.cpp.o:
-	cd /home/ubuntu/Workspace/CPP-Primer/build && $(MAKE) -f src/CMakeFiles/test_cppp.dir/build.make src/CMakeFiles/test_cppp.dir/chapter_6/e6.7.cpp.o
-.PHONY : chapter_6/e6.7.cpp.o
+playground/main.c.o:
+	cd /home/ubuntu/Workspace/CPP-Primer/build && $(MAKE) -f src/CMakeFiles/test_cppp.dir/build.make src/CMakeFiles/test_cppp.dir/playground/main.c.o
+.PHONY : playground/main.c.o
 
-chapter_6/e6.7.i: chapter_6/e6.7.cpp.i
+playground/main.i: playground/main.c.i
 
-.PHONY : chapter_6/e6.7.i
+.PHONY : playground/main.i
 
 # target to preprocess a source file
-chapter_6/e6.7.cpp.i:
-	cd /home/ubuntu/Workspace/CPP-Primer/build && $(MAKE) -f src/CMakeFiles/test_cppp.dir/build.make src/CMakeFiles/test_cppp.dir/chapter_6/e6.7.cpp.i
-.PHONY : chapter_6/e6.7.cpp.i
+playground/main.c.i:
+	cd /home/ubuntu/Workspace/CPP-Primer/build && $(MAKE) -f src/CMakeFiles/test_cppp.dir/build.make src/CMakeFiles/test_cppp.dir/playground/main.c.i
+.PHONY : playground/main.c.i
 
-chapter_6/e6.7.s: chapter_6/e6.7.cpp.s
+playground/main.s: playground/main.c.s
 
-.PHONY : chapter_6/e6.7.s
+.PHONY : playground/main.s
 
 # target to generate assembly for a file
-chapter_6/e6.7.cpp.s:
-	cd /home/ubuntu/Workspace/CPP-Primer/build && $(MAKE) -f src/CMakeFiles/test_cppp.dir/build.make src/CMakeFiles/test_cppp.dir/chapter_6/e6.7.cpp.s
-.PHONY : chapter_6/e6.7.cpp.s
+playground/main.c.s:
+	cd /home/ubuntu/Workspace/CPP-Primer/build && $(MAKE) -f src/CMakeFiles/test_cppp.dir/build.make src/CMakeFiles/test_cppp.dir/playground/main.c.s
+.PHONY : playground/main.c.s
 
 # Help Target
 help:
@@ -161,9 +161,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test_cppp"
 	@echo "... edit_cache"
-	@echo "... chapter_6/e6.7.o"
-	@echo "... chapter_6/e6.7.i"
-	@echo "... chapter_6/e6.7.s"
+	@echo "... playground/main.o"
+	@echo "... playground/main.i"
+	@echo "... playground/main.s"
 .PHONY : help
 
 
