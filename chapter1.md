@@ -1,1 +1,0 @@
-/home/ubuntu/Workspace/BLOG/source/_posts/CPP-Primer-Chapter-1-Getting-Started.md
