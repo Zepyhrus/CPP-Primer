@@ -10,11 +10,11 @@ int main() {
 
   int b = ++a;
 
-  std::cout << "b = " << b << std::endl;
+  std::cout << "b = " << b << ", a = " << a << std::endl;
 
   int c = a++;
 
-  std::cout << "c = " << c << std::endl;
+  std::cout << "c = " << c << ", a = " << a << std::endl;
   std::cout << "Finished!\n";
 
   return 0;
