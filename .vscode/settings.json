@@ -69,5 +69,6 @@
         "regex": "cpp",
         "set": "cpp",
         "string": "cpp"
-    }
+    },
+    "python.pythonPath": "/home/ubuntu/anaconda3/envs/tf2/bin/python"
 }
