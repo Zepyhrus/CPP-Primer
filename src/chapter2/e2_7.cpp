@@ -7,5 +7,6 @@ int main() {
   std::cout << "(b) " << 3.14e1L << ": long double" << std::endl;
   /* error: user-defined literal operator not found */
   // std::cout << "(c) " << 1024f << ": float" << std::endl;
-  std::cout << "(c) " << 3.14L << ": long double" << std::endl;
+  std::cout << "(c) " << 1024.f << ": float" << std::endl;
+  std::cout << "(d) " << 3.14L << ": long double" << std::endl;
 }
